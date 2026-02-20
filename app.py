@@ -78,8 +78,8 @@ ANALYSIS_INTERVALS = {
     ],
 }
 
-# Map data test names to CSV "Denumire" (e.g. ALP -> Fosfataza alcalina)
-INTERVALS_CSV_TEST_ALIASES = {"ALP": "Fosfataza alcalina"}
+# Map data test names to CSV "Denumire" (exact or prefix match in get_csv_interval_sets_for_test)
+INTERVALS_CSV_TEST_ALIASES = {"ALP": "Fosfataza alcalina", "GGT (gama glutamiltransferaza)": "GGT"}
 
 INTERVALS_CSV_PATH = Path(__file__).parent / "Intervale de statistica.csv"
 
@@ -123,9 +123,9 @@ def load_intervals_from_csv(path: Path | None = None) -> list[dict]:
     df.columns = [c.strip() if isinstance(c, str) else c for c in df.columns]
     col_names = list(df.columns)
     idx_obs = next((i for i, c in enumerate(col_names) if "Observatii" in str(c)), len(col_names))
-    # Interval columns: between Denumire (index 1) and Observatii
-    interval_cols = [c for c in col_names[2:idx_obs]]
-    if not interval_cols:
+    # Interval columns by index (2 to idx_obs-1) to avoid duplicate column names in CSV
+    interval_start, interval_end = 2, idx_obs
+    if interval_end <= interval_start:
         return []
 
     denumire_col = "Denumire"
@@ -136,23 +136,24 @@ def load_intervals_from_csv(path: Path | None = None) -> list[dict]:
     last_equipment = None
     last_denumire = None
     for _, row in df.iterrows():
-        denumire = str(row.get(denumire_col, "")).strip()
+        denumire = str(row.iloc[1]) if len(row) > 1 else ""
+        denumire = denumire.strip() if isinstance(denumire, str) else ""
         if not denumire or denumire.lower() == "nan":
             continue
         if denumire != last_denumire:
             last_equipment = None
             last_denumire = denumire
         labels = []
-        for c in interval_cols:
-            if c not in row.index:
-                continue
-            v = str(row.get(c, "")).strip()
+        for j in range(interval_start, interval_end):
+            if j >= len(row):
+                break
+            v = str(row.iloc[j]).strip()
             if v and v.lower() != "nan":
                 labels.append(v)
         if not labels:
             continue
-        obs = str(row.get(observatii_col, "")).strip()
-        equip = str(row.get(equip_col, "")).strip() if equip_col and equip_col in row.index else ""
+        obs = str(row.iloc[idx_obs]).strip() if idx_obs < len(row) else ""
+        equip = str(row.iloc[idx_obs + 1]).strip() if equip_col is not None and idx_obs + 1 < len(row) else ""
         if equip and equip.lower() == "nan":
             equip = ""
         if "VITROS" in equip.upper():
@@ -196,8 +197,18 @@ def get_csv_interval_sets_for_test(test_name: str, base_path: Path | None = None
     if sets_cache is None:
         load_intervals_from_csv._cache = load_intervals_from_csv(base_path)
         sets_cache = load_intervals_from_csv._cache
-    canonical = INTERVALS_CSV_TEST_ALIASES.get(test_name, test_name)
-    return [s for s in sets_cache if s["test"] == canonical]
+    test_stripped = test_name.strip()
+    canonical = INTERVALS_CSV_TEST_ALIASES.get(test_stripped, test_stripped)
+    # Exact match first
+    out = [s for s in sets_cache if s["test"] == canonical]
+    if out:
+        return out
+    # Else match by prefix: CSV "GGT" matches data "GGT (gama glutamiltransferaza)"
+    for s in sets_cache:
+        csv_test = s["test"]
+        if test_stripped.startswith(csv_test) or csv_test in test_stripped:
+            out.append(s)
+    return out
 
 
 def get_intervals_for_test(test_name: str, interval_set_index: int | None = None, csv_interval_sets: list[dict] | None = None) -> list | None:
