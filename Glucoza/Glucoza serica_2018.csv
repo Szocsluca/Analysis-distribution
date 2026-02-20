@@ -1,14 +1,3 @@
-PROMED SRL,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-"SLATINA, Str. Vintila Voda,Nr. 21, Tel 0249433112, Fax 0249433444, E-mail: office@policlinicapromed.ro, Web: www.policlinicapromed.ro",,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-RAPORT STATISTICA REZULTATE ANALIZE MEDICALE,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-Clinica ,Policlinica Promed,Provenienta ,Toate,,,,,,,,,,,,
-Laborator ,Laborator Analize Medicale,Compartiment ,Toate,,,,,,,,,,,,
-Teste ,Glucoza serica (glicemie),,,,,,,,,,,,,,
-Perioada ,01.01.2018 - 31.12.2018,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
 Nr. crt.,IDCerere,Data,Varsta,CNP,Sex,Localitate,Test,Rezultat,UM,Interval de referinta,Proba,Metoda asociata,Echipament,Diagnostic,Rata filtrarii glomerolare
 1,276,05.01.2018 7:52:00,77 ani 1 luna ,1401129284387,M,SLATINA,Glucoza serica (glicemie),"111,2",mg/dL,65 - 110,Ser,Spectrofotometrie,Vitros 350,203 - Anemia prin carenta de fier,
 2,154,04.01.2018 8:03:00,48 ani 3 luni ,2690929284447,F,SLATINA,Glucoza serica (glicemie),99,mg/dL,65 - 110,Ser,Spectrofotometrie,Dimension RXL,457 - Hipertensiunea secundara,"92,14"

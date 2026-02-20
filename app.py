@@ -13,8 +13,9 @@ import streamlit as st
 
 from rules import apply_exclusion_rules, apply_row_filters, get_active_rule_names
 
-# Folders (one per analysis) containing CSV files for all years. All CSVs in these folders are loaded and concatenated.
-ANALYSIS_FOLDERS = ["Creatinina", "Hemoglobina", "Glucoza"]
+# Folders containing CSV files for all years. All CSVs in these folders are loaded and concatenated.
+# Each folder can contain one or more analysis types (Test column: e.g. TGO, TGP in "TGO & TGP").
+ANALYSIS_FOLDERS = ["Creatinina", "Hemoglobina", "Glucoza", "TGO & TGP", "ALP & GGT", "MT"]
 
 
 def load_all_csvs_from_folders(base_path: Path | None = None) -> pd.DataFrame:
@@ -52,7 +53,7 @@ COL_ECHIPAMENT = "Echipament"
 COL_DIAGNOSTIC = "Diagnostic"
 COL_RATA = "Rata filtrarii glomerolare"
 
-# Analysis-specific histogram intervals. (low, high) or (low, high, left_open_inclusive). None = unbounded.
+# Analysis-specific histogram intervals (fallback when CSV not used). (low, high) or (low, high, left_open_inclusive). None = unbounded.
 ANALYSIS_INTERVALS = {
     "Creatinina serica": [
         (None, 0.2),
@@ -77,9 +78,143 @@ ANALYSIS_INTERVALS = {
     ],
 }
 
+# Map data test names to CSV "Denumire" (e.g. ALP -> Fosfataza alcalina)
+INTERVALS_CSV_TEST_ALIASES = {"ALP": "Fosfataza alcalina"}
 
-def get_intervals_for_test(test_name: str) -> list | None:
-    """Return predefined bin edges for this test, or None to use automatic bins."""
+INTERVALS_CSV_PATH = Path(__file__).parent / "Intervale de statistica.csv"
+
+
+def _parse_interval_label(label: str) -> tuple | None:
+    """Parse one interval label from Intervale CSV to (low, high) or (low, high, inclusive). Returns None if unparseable."""
+    s = str(label).strip()
+    if not s:
+        return None
+    # < 10, <10, <= 10
+    m = re.match(r"^[<≤]\s*([\d.,]+)$", s, re.IGNORECASE)
+    if m:
+        high = float(m.group(1).replace(",", "."))
+        return (None, high)
+    # > 75, >75, >= 75
+    m = re.match(r"^[>≥]\s*([\d.,]+)$", s, re.IGNORECASE)
+    if m:
+        low = float(m.group(1).replace(",", "."))
+        return (low, None, True)  # right_inclusive for >=
+    # 10-15, 30-40
+    m = re.match(r"^([\d.,]+)\s*-\s*([\d.,]+)$", s)
+    if m:
+        low = float(m.group(1).replace(",", "."))
+        high = float(m.group(2).replace(",", "."))
+        return (low, high)
+    return None
+
+
+def load_intervals_from_csv(path: Path | None = None) -> list[dict]:
+    """
+    Load Intervale de statistica.csv. Returns list of:
+    { "test": str, "condition_label": str, "age": "copii"|"adulti"|None, "equipment": "VITROS"|"ALTE ECHIPAMENTE"|None, "intervals": list of (low, high) tuples }
+    """
+    p = path or INTERVALS_CSV_PATH
+    if not p.exists():
+        return []
+    try:
+        df = pd.read_csv(p, encoding="utf-8", dtype=str)
+    except Exception:
+        return []
+    df.columns = [c.strip() if isinstance(c, str) else c for c in df.columns]
+    col_names = list(df.columns)
+    idx_obs = next((i for i, c in enumerate(col_names) if "Observatii" in str(c)), len(col_names))
+    # Interval columns: between Denumire (index 1) and Observatii
+    interval_cols = [c for c in col_names[2:idx_obs]]
+    if not interval_cols:
+        return []
+
+    denumire_col = "Denumire"
+    observatii_col = "Observatii"
+    equip_col = col_names[idx_obs + 1] if idx_obs + 1 < len(col_names) else None
+    # Build list of (test, condition_label, age, equipment, interval_labels). Propagate equipment from previous row when empty (same test block).
+    result = []
+    last_equipment = None
+    last_denumire = None
+    for _, row in df.iterrows():
+        denumire = str(row.get(denumire_col, "")).strip()
+        if not denumire or denumire.lower() == "nan":
+            continue
+        if denumire != last_denumire:
+            last_equipment = None
+            last_denumire = denumire
+        labels = []
+        for c in interval_cols:
+            if c not in row.index:
+                continue
+            v = str(row.get(c, "")).strip()
+            if v and v.lower() != "nan":
+                labels.append(v)
+        if not labels:
+            continue
+        obs = str(row.get(observatii_col, "")).strip()
+        equip = str(row.get(equip_col, "")).strip() if equip_col and equip_col in row.index else ""
+        if equip and equip.lower() == "nan":
+            equip = ""
+        if "VITROS" in equip.upper():
+            equipment = "VITROS"
+            last_equipment = "VITROS"
+        elif "ALTE" in equip.upper() or "ECHIPAMENTE" in equip.upper():
+            equipment = "ALTE ECHIPAMENTE"
+            last_equipment = "ALTE ECHIPAMENTE"
+        else:
+            equipment = last_equipment  # same block as previous row (e.g. Adulti after Copii VITROS)
+        # Parse Observatii: "Copii: < 18 ani", "Adulti: >= 18 ani", "Indiferent de gen (M/F)"
+        age = None
+        if "Copii" in obs or "< 18" in obs:
+            age = "copii"
+        elif "Adulti" in obs or ">= 18" in obs or "≥ 18" in obs:
+            age = "adulti"
+        condition_parts = [obs] if obs else []
+        if equipment:
+            condition_parts.append(equipment)
+        condition_label = " | ".join(condition_parts) if condition_parts else denumire
+        parsed = []
+        for lb in labels:
+            t = _parse_interval_label(lb)
+            if t is not None:
+                parsed.append(t)
+        if not parsed:
+            continue
+        result.append({
+            "test": denumire,
+            "condition_label": condition_label,
+            "age": age,
+            "equipment": equipment,
+            "intervals": parsed,
+        })
+    return result
+
+
+def get_csv_interval_sets_for_test(test_name: str, base_path: Path | None = None) -> list[dict]:
+    """Return all interval sets from Intervale CSV for this test (with conditions). Empty if none."""
+    sets_cache = getattr(load_intervals_from_csv, "_cache", None)
+    if sets_cache is None:
+        load_intervals_from_csv._cache = load_intervals_from_csv(base_path)
+        sets_cache = load_intervals_from_csv._cache
+    canonical = INTERVALS_CSV_TEST_ALIASES.get(test_name, test_name)
+    return [s for s in sets_cache if s["test"] == canonical]
+
+
+def get_intervals_for_test(test_name: str, interval_set_index: int | None = None, csv_interval_sets: list[dict] | None = None) -> list | None:
+    """
+    Return predefined bin edges for this test.
+    If csv_interval_sets is provided and interval_set_index is not None, use that CSV set.
+    Otherwise use ANALYSIS_INTERVALS (hardcoded) or first CSV set for this test.
+    """
+    if csv_interval_sets is not None and len(csv_interval_sets) > 0:
+        idx = interval_set_index if interval_set_index is not None else 0
+        if 0 <= idx < len(csv_interval_sets):
+            return csv_interval_sets[idx]["intervals"]
+    csv_sets = get_csv_interval_sets_for_test(test_name)
+    if csv_sets:
+        idx = interval_set_index if interval_set_index is not None else 0
+        if 0 <= idx < len(csv_sets):
+            return csv_sets[idx]["intervals"]
     return ANALYSIS_INTERVALS.get(test_name)
 
 
@@ -342,8 +477,32 @@ def main():
         st.warning("Nicio înregistrare după filtre. Relaxează filtrele.")
         return
 
-    # --- Main: histogram and stats ---
-    intervals = get_intervals_for_test(selected_test)
+    # --- Intervals: always use Intervale de statistica.csv for TGO, TGP, ALP (Fosfataza alcalina), GGT ---
+    csv_interval_sets = get_csv_interval_sets_for_test(selected_test)
+    interval_set_index = None
+    if csv_interval_sets:
+        options = [s["condition_label"] for s in csv_interval_sets]
+        default_idx = 0
+        # Auto-select ALP (and any conditioned) set from sidebar filters: vârstă + echipament
+        prefer_copii = age_max < 18
+        prefer_adulti = age_min >= 18
+        only_vitros = len(selected_echipamente) > 0 and all("VITROS" in e.upper() for e in selected_echipamente)
+        only_alte = len(selected_echipamente) > 0 and not any("VITROS" in e.upper() for e in selected_echipamente)
+        for i, s in enumerate(csv_interval_sets):
+            age_ok = s["age"] is None or (s["age"] == "copii" and prefer_copii) or (s["age"] == "adulti" and prefer_adulti)
+            eq_ok = s["equipment"] is None or (s["equipment"] == "VITROS" and only_vitros) or (s["equipment"] == "ALTE ECHIPAMENTE" and only_alte)
+            if age_ok and eq_ok:
+                default_idx = i
+                break
+        selected_label = st.sidebar.selectbox(
+            "Set intervale (din Intervale de statistica.csv)",
+            options=options,
+            index=default_idx,
+            help="Pentru ALP (Fosfataza alcalina) intervalele depind de filtrele din meniul stâng: vârstă (copii <18 / adulti ≥18) și echipament (VITROS / alte).",
+        )
+        interval_set_index = options.index(selected_label)
+
+    intervals = get_intervals_for_test(selected_test, interval_set_index=interval_set_index, csv_interval_sets=csv_interval_sets)
     use_custom_bins = intervals is not None
     if use_custom_bins:
         show_kde = False
@@ -354,6 +513,13 @@ def main():
     ref_low, ref_high = None, None
     if COL_INTERVAL_REF in filtered.columns:
         ref_low, ref_high = parse_reference_interval(filtered[COL_INTERVAL_REF])
+
+    # Optional: two vertical lines to define an interval and see population between them
+    v_min, v_max = float(values.min()), float(values.max())
+    st.sidebar.subheader("Interval personalizat (linii verticale)")
+    line1 = st.sidebar.number_input("Punct 1 (pe OX)", value=None, min_value=v_min, max_value=v_max, step=(v_max - v_min) / 100 if v_max > v_min else 0.1, format="%.2f", key="line1")
+    line2 = st.sidebar.number_input("Punct 2 (pe OX)", value=None, min_value=v_min, max_value=v_max, step=(v_max - v_min) / 100 if v_max > v_min else 0.1, format="%.2f", key="line2")
+    show_interval_lines = line1 is not None and line2 is not None
 
     fig = go.Figure()
     binned = None
@@ -374,6 +540,18 @@ def main():
             customdata=np.column_stack([min_str, max_str]),
             hovertemplate="%{x}<br>Frecvență: %{y:,}<br>Min real: %{customdata[0]}<br>Max real: %{customdata[1]}<extra></extra>",
         ))
+        if show_interval_lines:
+            interval_left = min(line1, line2)
+            interval_right = max(line1, line2)
+            # Shade bars that overlap [interval_left, interval_right] using Min/Max real
+            for i, row in binned.iterrows():
+                r_min, r_max = row["Min real"], row["Max real"]
+                if pd.isna(r_min) and pd.isna(r_max):
+                    continue
+                lo = r_min if pd.notna(r_min) else -np.inf
+                hi = r_max if pd.notna(r_max) else np.inf
+                if interval_left < hi and interval_right > lo:
+                    fig.add_vrect(x0=i - 0.5, x1=i + 0.5, fillcolor="blue", opacity=0.25, line_width=0, layer="below")
         fig.update_layout(
             title=f"Distribuție Rezultat – {selected_test} (n={len(values):,})",
             xaxis_title="Interval Rezultat",
@@ -396,6 +574,12 @@ def main():
             fig.add_vrect(x0=ref_low, x1=ref_high, fillcolor="green", opacity=0.15, line_width=0)
             fig.add_vline(x=ref_low, line_dash="dash", line_color="green")
             fig.add_vline(x=ref_high, line_dash="dash", line_color="green")
+        if show_interval_lines:
+            interval_left = min(line1, line2)
+            interval_right = max(line1, line2)
+            fig.add_vrect(x0=interval_left, x1=interval_right, fillcolor="blue", opacity=0.2, line_width=0)
+            fig.add_vline(x=interval_left, line_dash="solid", line_color="blue", line_width=2)
+            fig.add_vline(x=interval_right, line_dash="solid", line_color="blue", line_width=2)
         fig.update_layout(
             title=f"Distribuție Rezultat – {selected_test} (n={len(values):,})",
             xaxis_title="Rezultat",
@@ -404,6 +588,17 @@ def main():
             height=450,
         )
     st.plotly_chart(fig, width="stretch")
+
+    if show_interval_lines:
+        interval_left = min(line1, line2)
+        interval_right = max(line1, line2)
+        in_interval = (values >= interval_left) & (values <= interval_right)
+        count_interval = int(in_interval.sum())
+        pct_interval = (100.0 * count_interval / len(values)) if len(values) else 0
+        st.success(
+            f"**Interval ales (OX):** {interval_left:.2f} — {interval_right:.2f}  \n"
+            f"**Populație între cele 2 linii:** *n* = {count_interval:,} (**{pct_interval:.1f}%** din total)"
+        )
 
     if use_custom_bins and binned is not None:
         st.subheader("Intervale: min–max real în date")
@@ -414,10 +609,17 @@ def main():
 
     # Summary stats
     unit = filtered[COL_UM].dropna().iloc[0] if COL_UM in filtered.columns and filtered[COL_UM].notna().any() else ""
+    n_total = len(values)
+    n_children = 0
+    if "age" in filtered.columns:
+        pop_ages = filtered.loc[values.index, "age"]
+        n_children = int((pop_ages < 18).sum())
+    pct_children = (100.0 * n_children / n_total) if n_total else 0
+
     st.subheader("Statistici descriptive")
     c1, c2, c3, c4, c5 = st.columns(5)
     with c1:
-        st.metric("N", f"{len(values):,}")
+        st.metric("N", f"{n_total:,}")
     with c2:
         st.metric("Medie" + (f" ({unit})" if unit else ""), f"{values.mean():.2f}")
     with c3:
@@ -427,8 +629,9 @@ def main():
     with c5:
         st.metric("IQR", f"{values.quantile(0.75) - values.quantile(0.25):.2f}")
 
+    st.caption(f"**Copii (vârstă < 18 ani) în populație:** {n_children:,} ({pct_children:.1f}%)")
+
     # Modal interval: interval with highest frequency ("where most of the population is")
-    n_total = len(values)
     if use_custom_bins and binned is not None:
         idx_max = binned["Frecvență"].idxmax()
         modal_row = binned.loc[idx_max]

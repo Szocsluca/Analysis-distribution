@@ -1,14 +1,3 @@
-PROMED SRL,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-"SLATINA, Str. Vintila Voda,Nr. 21, Tel 0249433112, Fax 0249433444, E-mail: office@policlinicapromed.ro, Web: www.policlinicapromed.ro",,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-RAPORT STATISTICA REZULTATE ANALIZE MEDICALE,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-Clinica ,Policlinica Promed,Provenienta ,Toate,,,,,,,,,,,,
-Laborator ,Laborator Analize Medicale,Compartiment ,Toate,,,,,,,,,,,,
-Teste ,"Creatinina serica,Hemoglobina glicata (Hb A1c)",,,,,,,,,,,,,,
-Perioada ,01.01.2025 - 31.12.2025,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
 Nr. crt.,IDCerere,Data,Varsta,CNP,Sex,Localitate,Test,Rezultat,UM,Interval de referinta,Proba,Metoda asociata,Echipament,Diagnostic,Rata filtrarii glomerolare
 1,26317,13.01.2025 7:08:00,57 ani 6 luni ,2670704284393,F,SLATINA,Creatinina serica,0.90,mg/dL,"0,52 - 1,04",Ser,Spectrofotometrie,Vitros 4600,203 - Anemia prin carenta de fier,"70,44"
 2,26025,08.01.2025 8:53:00,60 ani 11 luni ,2640121284381,F,DELENI,Creatinina serica,1.10,mg/dL,"0,52 - 1,04",Ser,Spectrofotometrie,Vitros 4600,453 - Hipertensiunea esentiala (primara),"54,1"

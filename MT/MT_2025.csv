@@ -1,0 +1,614 @@
+PROMED SRL,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+"SLATINA, Str. Vintila Voda,Nr. 21, Tel 0249433112, Fax 0249433444, E-mail: office@policlinicapromed.ro, Web: www.policlinicapromed.ro",,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+RAPORT STATISTICA REZULTATE ANALIZE MEDICALE,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Clinica ,Policlinica Promed,Provenienta ,Toate,,,,,,,,,,,,
+Laborator ,Laborator Analize Medicale,Compartiment ,Toate,,,,,,,,,,,,
+Teste ,"CA 125,CA 15.3,CA 19.9",,,,,,,,,,,,,,
+Perioada ,01.01.2025 - 31.12.2025,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Nr. crt.,IDCerere,Data,Varsta,CNP,Sex,Localitate,Test,Rezultat,UM,Interval de referinta,Proba,Metoda asociata,Echipament,Diagnostic,Rata filtrarii glomerolare
+1,25963,08.01.2025 7:06:00,81 ani 1 luna ,1431122284374,M,SLATINA,CA 19.9,"11,34",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+2,25973,08.01.2025 7:22:00,56 ani 10 luni ,1680211284380,M,SLATINA,CA 19.9,"302,50",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+3,26036,08.01.2025 9:22:00,65 ani ,2591221381451,F,TESLUI,CA 19.9,"1,89",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+4,26036,08.01.2025 9:22:00,65 ani ,2591221381451,F,TESLUI,CA 125,"8,81",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+5,26077,08.01.2025 11:18:00,72 ani 1 luna ,2521115284385,F,SLATINA,CA 15.3,"48,34",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+6,26090,09.01.2025 7:24:00,74 ani 7 luni ,1500521284369,M,SLATINA,CA 15.3,"18,43",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"75,05"
+7,26113,09.01.2025 8:25:00,54 ani 4 luni ,2700812287121,F,OPTASI,CA 15.3,"8,16",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"85,64"
+8,26220,10.01.2025 7:49:00,38 ani 9 luni ,1860316170043,M,GALATI,CA 19.9,"18,25",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,22"
+9,26222,10.01.2025 7:52:00,85 ani 5 luni ,0000000000000,F,SLATINA,CA 19.9,"&lt; 1,0",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+10,26281,10.01.2025 9:54:00,67 ani 9 luni ,1570403284391,M,BERIA DE SUS,CA 19.9,"42,74",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,102 - Tumora maligna a ficatului si canalelor biliare intrahepatice,"82,94"
+11,26355,13.01.2025 8:22:00,77 ani ,2480106284384,F,SLATINA,CA 15.3,"23,72",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+12,26389,13.01.2025 8:57:00,60 ani 6 luni ,2640618135595,F,SLATINA,CA 125,"151,24",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,127 - Tumora maligna a colului uterin,"63,78"
+13,26398,13.01.2025 9:15:00,81 ani 8 luni ,2430414284384,F,OPTASI,CA 19.9,"19,13",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"49,98"
+14,26448,13.01.2025 14:39:00,42 ani 6 luni ,2820624284552,F,SLATINA,CA 125,"57,71",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+15,26448,13.01.2025 14:39:00,42 ani 6 luni ,2820624284552,F,SLATINA,CA 19.9,"18,57",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+16,26468,14.01.2025 7:28:00,84 ani 11 luni ,2400201284362,F,SLATINA,CA 19.9,"11,25",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"38,06"
+17,26529,14.01.2025 9:05:00,23 ani 11 luni ,6010124032000,F,SLATINA,CA 15.3,"4,75",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+18,26671,15.01.2025 6:58:00,60 ani 4 luni ,2640901284381,F,SLATINA,CA 19.9,"13,38",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,242 - Diabetul zaharat neinsulino-dependent,"77,17"
+19,26689,15.01.2025 7:39:00,55 ani 11 luni ,2690131284361,F,SLATINA,CA 15.3,"16,48",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"65,31"
+20,26689,15.01.2025 7:39:00,55 ani 11 luni ,2690131284361,F,SLATINA,CA 19.9,"7,24",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"65,31"
+21,26766,15.01.2025 9:37:00,68 ani 11 luni ,2560120287720,F,SLATIOARA,CA 15.3,"17,55",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"64,39"
+22,26804,15.01.2025 11:35:00,54 ani 5 luni ,2700814284367,F,SLATINA,CA 15.3,"18,25",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,"235 - Afectiuni tiroidiene si inrudite, legate de carenta in iod",
+23,26817,15.01.2025 14:26:00,80 ani 11 luni ,1440202287724,M,BRANCOVENI,CA 19.9,"7,03",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,134 - Tumora maligna a prostatei,72
+24,26831,16.01.2025 7:07:00,75 ani ,1500102287724,M,STREJESTI,CA 19.9,"11,38",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,701 - Hiperplazia prostatei,"67,49"
+25,26881,16.01.2025 8:45:00,60 ani 5 luni ,1640806284388,M,SLATINA,CA 19.9,"41,01",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"88,22"
+26,26907,16.01.2025 9:47:00,61 ani 10 luni ,1630303283373,M,DRAGANESTI-OLT,CA 19.9,"7,47",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+27,27087,17.01.2025 9:03:00,67 ani 2 luni ,1571108284360,M,BRANCOVENI,CA 19.9,"7,31",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"91,29"
+28,27228,20.01.2025 8:17:00,76 ani 5 luni ,1480808284367,M,SLATINA,CA 19.9,&lt;1,U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+29,27265,20.01.2025 9:00:00,78 ani 3 luni ,2461015284361,F,SLATINA,CA 19.9,"19,34",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"89,19"
+30,27267,20.01.2025 9:06:00,69 ani 11 luni ,2550210287720,F,GRADINARI,CA 19.9,"27,37",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+31,27383,21.01.2025 7:19:00,36 ani 9 luni ,2880407284551,F,MILCOVU DIN DEAL,CA 15.3,"6,34",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+32,27389,21.01.2025 7:35:00,73 ani 11 luni ,2510220284365,F,SLATINA,CA 15.3,"14,06",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+33,27391,21.01.2025 7:46:00,40 ani 1 luna ,1841122284618,M,SLATINA,CA 19.9,"4,02",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+34,27394,21.01.2025 7:53:00,53 ani 3 luni ,2711005280818,F,OSICA DE SUS,CA 15.3,"6,18",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+35,27432,21.01.2025 8:56:00,56 ani 2 luni ,2681118283379,F,SCORNICESTI,CA 15.3,"9,92",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+36,27577,22.01.2025 8:23:00,77 ani 7 luni ,2470617284366,F,SLATINA,CA 19.9,"23,61",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"84,59"
+37,27848,24.01.2025 7:47:00,63 ani 7 luni ,1610604287722,M,DOBA,CA 19.9,"13,03",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"69,06"
+38,27854,24.01.2025 8:00:00,28 ani 11 luni ,2960212284580,F,SLATINA,CA 15.3,"16,85",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+39,27876,24.01.2025 8:37:00,77 ani 5 luni ,1470802284397,M,SLATINA,CA 19.9,"7,43",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,096 - Tumori maligne ale stomacului,"52,74"
+40,27928,27.01.2025 7:18:00,79 ani 2 luni ,2451029284361,F,SLATINA,CA 15.3,"14,15",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"40,59"
+41,28144,28.01.2025 11:18:00,59 ani 9 luni ,1650417284400,M,SLATINA,CA 19.9,"15,57",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"103,79"
+42,28265,30.01.2025 8:27:00,59 ani 11 luni ,2650202283383,F,MARUNTEI,CA 15.3,"9,92",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+43,28268,30.01.2025 8:35:00,54 ani 7 luni ,1700607282211,M,TIA MARE,CA 19.9,"38,41",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+44,28316,31.01.2025 7:03:00,56 ani 11 luni ,1680211284380,M,SLATINA,CA 19.9,"282,5",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+45,28327,31.01.2025 7:32:00,69 ani ,2560121284365,F,SLATINA,CA 125,"5,2",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"58,87"
+46,28365,31.01.2025 9:53:00,60 ani 7 luni ,2640627280792,F,DRAGANESTI-OLT,CA 15.3,"16,8",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"80,73"
+47,28366,31.01.2025 9:55:00,61 ani 1 luna ,1631229284361,M,SLATINA,CA 19.9,"10,52",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+48,28422,03.02.2025 8:04:00,78 ani ,1470105284373,M,PIATRA-OLT,CA 19.9,"8,12",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"70,89"
+49,28455,03.02.2025 8:38:00,65 ani 10 luni ,2590401380017,F,GANEASA,CA 19.9,"6,69",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+50,28462,03.02.2025 8:47:00,69 ani 11 luni ,2550210284401,F,SLATINA,CA 15.3,"24,03",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,631 - Alte artrite,"70,47"
+51,28557,04.02.2025 6:58:00,74 ani 1 luna ,1501226381468,M,GANEASA,CA 19.9,"42,38",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"88,7"
+52,28647,04.02.2025 9:26:00,64 ani ,2610113284395,F,BOBICESTI,CA 19.9,"30,22",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,099 - Tumora maligna a jonctiunii rectosigmoidiene,"82,91"
+53,28782,05.02.2025 8:20:00,52 ani 2 luni ,2721117284383,F,SLATINA,CA 15.3,"6,56",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"110,47"
+54,28781,05.02.2025 8:21:00,48 ani 10 luni ,2760307284360,F,SLATINA,CA 15.3,"15,85",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"95,16"
+55,28975,06.02.2025 8:38:00,69 ani 10 luni ,2550325284365,F,SALCIA,CA 19.9,"33,78",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"90,94"
+56,29014,06.02.2025 9:36:00,63 ani 2 luni ,2611127284368,F,SLATINA,CA 19.9,"7,78",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+57,29164,07.02.2025 10:02:00,56 ani 6 luni ,2680804287147,F,VITANESTI,CA 19.9,"7,42",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"98,05"
+58,29269,10.02.2025 8:35:00,54 ani 4 luni ,2700926284388,F,STREJESTI,CA 15.3,"8,14",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+59,29278,10.02.2025 8:45:00,61 ani 6 luni ,1630721163235,M,CRAIOVA,CA 19.9,"20,63",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,701 - Hiperplazia prostatei,"67,83"
+60,29330,10.02.2025 10:41:00,78 ani 6 luni ,1460720284366,M,SLATINA,CA 19.9,"14,58",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"85,84"
+61,29375,11.02.2025 7:20:00,60 ani 4 luni ,2641006284365,F,SPRANCENATA,CA 19.9,"6,71",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"76,05"
+62,29375,11.02.2025 7:20:00,60 ani 4 luni ,2641006284365,F,SPRANCENATA,CA 125,"7,48",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"76,05"
+63,29375,11.02.2025 7:20:00,60 ani 4 luni ,2641006284365,F,SPRANCENATA,CA 15.3,"17,98",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"76,05"
+64,29487,12.02.2025 7:43:00,64 ani 8 luni ,1600527284433,M,CORBU,CA 19.9,"3,77",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,099 - Tumora maligna a jonctiunii rectosigmoidiene,"88,07"
+65,29598,13.02.2025 7:46:00,75 ani 4 luni ,1491003284400,M,SLATINA,CA 19.9,"27,03",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+66,29687,14.02.2025 7:29:00,57 ani 4 luni ,1671010284420,M,SLATINA,CA 19.9,"6,5",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"94,64"
+67,29704,14.02.2025 8:04:00,86 ani ,2390205284387,F,CORBU,CA 19.9,"274,26",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"55,69"
+68,29754,14.02.2025 13:28:00,20 ani 10 luni ,5040407284545,M,PRISEACA,CA 19.9,"2,52",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,"158 - Limfom non-Hodgkin, de alte tipuri si neprecizate","124,58"
+69,29759,17.02.2025 7:33:00,44 ani 11 luni ,2800311284561,F,SLATINA,CA 15.3,"14,24",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+70,29875,18.02.2025 7:57:00,78 ani ,1470128284372,M,SLATINA,CA 19.9,"11,35",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,099 - Tumora maligna a jonctiunii rectosigmoidiene,"63,25"
+71,29949,19.02.2025 7:56:00,51 ani 2 luni ,1731129284401,M,SLATINA,CA 19.9,"42,61",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+72,30008,19.02.2025 9:37:00,64 ani 11 luni ,2600308282209,F,SLATINA,CA 19.9,"6,07",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"49,34"
+73,30023,19.02.2025 10:42:00,73 ani 3 luni ,2511028284387,F,SLATINA,CA 15.3,"22,81",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+74,30127,21.02.2025 8:21:00,52 ani 9 luni ,2720430287137,F,PISCANI,CA 19.9,"3,1",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+75,30129,21.02.2025 8:23:00,50 ani ,2750210284373,F,DOBROTINET,CA 15.3,"6,75",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"68,98"
+76,30153,21.02.2025 9:42:00,59 ani ,2660211282251,F,SLATINA,CA 125,"10,16",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,27"
+77,30153,21.02.2025 9:42:00,59 ani ,2660211282251,F,SLATINA,CA 15.3,"11,86",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,27"
+78,30153,21.02.2025 9:42:00,59 ani ,2660211282251,F,SLATINA,CA 19.9,"12,27",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,27"
+79,30156,21.02.2025 9:59:00,54 ani 3 luni ,2701117283393,F,BERINDEI,CA 125,"5,02",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"103,25"
+80,30156,21.02.2025 9:59:00,54 ani 3 luni ,2701117283393,F,BERINDEI,CA 15.3,"7,53",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"103,25"
+81,30190,24.02.2025 8:20:00,57 ani 5 luni ,1670924284373,M,SLATINA,CA 19.9,"66,55",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"97,91"
+82,30250,25.02.2025 6:55:00,68 ani 7 luni ,2560713284383,F,SLATINA,CA 15.3,"26,81",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+83,30250,25.02.2025 6:55:00,68 ani 7 luni ,2560713284383,F,SLATINA,CA 125,"9,59",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+84,30319,25.02.2025 10:32:00,47 ani 2 luni ,2771223284382,F,SLATINA,CA 125,"9,73",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+85,30319,25.02.2025 10:32:00,47 ani 2 luni ,2771223284382,F,SLATINA,CA 15.3,"17,4",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+86,30334,25.02.2025 12:35:00,68 ani 4 luni ,1561011284437,M,DOBROTEASA,CA 19.9,&lt; 1,U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"106,34"
+87,30345,26.02.2025 7:34:00,67 ani 7 luni ,1570702284365,M,SLATINA,CA 19.9,"7,47",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"57,65"
+88,30393,26.02.2025 9:22:00,68 ani 7 luni ,2560717284368,F,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,588 - Alte boli ale pancreasului,"85,46"
+89,30443,27.02.2025 7:02:00,57 ani ,1680211284380,M,SLATINA,CA 19.9,"180,33",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+90,30449,27.02.2025 7:34:00,62 ani 5 luni ,2620914284379,F,SLATINA,CA 15.3,"15,2",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"68,93"
+91,30449,27.02.2025 7:34:00,62 ani 5 luni ,2620914284379,F,SLATINA,CA 125,"12,78",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"68,93"
+92,30449,27.02.2025 7:34:00,62 ani 5 luni ,2620914284379,F,SLATINA,CA 19.9,"9,01",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"68,93"
+93,30454,27.02.2025 7:49:00,57 ani 8 luni ,2670606284360,F,SLATINA,CA 19.9,"29,58",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"82,47"
+94,30638,03.03.2025 7:53:00,47 ani 2 luni ,2771216283375,F,IZVOARELE,CA 15.3,18,U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+95,30643,03.03.2025 8:00:00,68 ani 10 luni ,2560501163245,F,SLATINA,CA 15.3,"7,59",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"90,15"
+96,30690,03.03.2025 9:21:00,72 ani 5 luni ,1520930287130,M,SCORNICESTI,CA 19.9,"11,43",U/ml,&lt; 25,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"68,52"
+97,30842,04.03.2025 8:56:00,47 ani 10 luni ,2770421284367,F,GANEASA,CA 15.3,"15,78",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+98,30964,05.03.2025 8:04:00,63 ani 7 luni ,2610722284373,F,SLATINA,CA 125,"9,87",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"88,51"
+99,31008,05.03.2025 8:57:00,31 ani 1 luna ,2940120284556,F,SLATINA,CA 15.3,"13,76",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+100,31010,05.03.2025 8:59:00,65 ani 10 luni ,2590502287126,F,JITARU,CA 125,"15,58",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,289 - Tulburari de metabolism al lipoproteinelor si alte lipidemii,"49,54"
+101,31051,05.03.2025 9:49:00,74 ani 3 luni ,2501201284361,F,SLATINA,CA 15.3,"11,82",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,462 - Cardiopatie ischemica cronica,"73,17"
+102,31123,06.03.2025 7:36:00,68 ani 7 luni ,2560729284377,F,SLATINA,CA 19.9,"59,71",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"64,39"
+103,31189,06.03.2025 9:06:00,48 ani 10 luni ,2760415280797,F,SLATINA,CA 15.3,"12,19",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"92,14"
+104,31353,07.03.2025 11:33:00,71 ani 11 luni ,2530407284383,F,SLATINA,CA 19.9,"91,02",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"62,2"
+105,31398,10.03.2025 7:47:00,62 ani 8 luni ,2620709284396,F,SLATIOARA,CA 19.9,"2,94",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"83,43"
+106,31435,10.03.2025 8:45:00,73 ani 4 luni ,1511021284361,M,MARUNTEI,CA 19.9,"10,37",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"86,73"
+107,31457,10.03.2025 9:15:00,54 ani 8 luni ,1700618284393,M,SLATINA,CA 19.9,"15,59",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+108,31507,11.03.2025 7:09:00,37 ani ,2880223284562,F,STREJESTI,CA 15.3,"13,08",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,687 - Litiaza rinichiului si ureterului,"97,1"
+109,31653,12.03.2025 8:14:00,54 ani 5 luni ,2700926284388,F,STREJESTI,CA 15.3,"7,56",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+110,31731,13.03.2025 7:04:00,56 ani ,2690305284400,F,DOBROTINET,CA 125,"15,63",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+111,31731,13.03.2025 7:04:00,56 ani ,2690305284400,F,DOBROTINET,CA 15.3,"13,99",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+112,31731,13.03.2025 7:04:00,56 ani ,2690305284400,F,DOBROTINET,CA 19.9,"3,07",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+113,31779,13.03.2025 8:26:00,72 ani ,2530218287128,F,POTCOAVA,CA 125,"6,67",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+114,31822,13.03.2025 10:18:00,73 ani 5 luni ,2510914284366,F,SLATINA,CA 125,"8,72",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"51,13"
+115,31782,13.03.2025 8:30:00,1 zi,0000000000000,M,SLATINA,CA 125,"150,19",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+116,31782,13.03.2025 8:30:00,1 zi,0000000000000,M,SLATINA,CA 15.3,"29,94",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+117,31782,13.03.2025 8:30:00,1 zi,0000000000000,M,SLATINA,CA 19.9,"102,18",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+118,31879,14.03.2025 8:00:00,56 ani 9 luni ,2680603280822,F,SLATINA,CA 19.9,"9,73",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,097 - Tumora maligna a intestinului subtire,"87,07"
+119,31879,14.03.2025 8:00:00,56 ani 9 luni ,2680603280822,F,SLATINA,CA 125,"7,54",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,097 - Tumora maligna a intestinului subtire,"87,07"
+120,31879,14.03.2025 8:00:00,56 ani 9 luni ,2680603280822,F,SLATINA,CA 15.3,"14,64",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,097 - Tumora maligna a intestinului subtire,"87,07"
+121,32026,17.03.2025 9:25:00,30 ani 5 luni ,2940930284550,F,SLATINA,CA 125,"11,4",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+122,32168,18.03.2025 9:47:00,57 ani 8 luni ,2670712284422,F,SLATINA,CA 15.3,"27,45",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"87,81"
+123,32222,19.03.2025 7:28:00,75 ani 7 luni ,1490817290915,M,CAMPINA,CA 19.9,"7,35",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"79,41"
+124,32297,20.03.2025 7:38:00,60 ani 6 luni ,2640916284397,F,SLATINA,CA 125,"15,4",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+125,32297,20.03.2025 7:38:00,60 ani 6 luni ,2640916284397,F,SLATINA,CA 19.9,"63,16",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+126,32329,20.03.2025 8:57:00,54 ani 5 luni ,2701014284377,F,CURTISOARA,CA 19.9,"11,43",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"99,51"
+127,32210,18.03.2025 12:44:00,0 zile,0000000000000,M,SLATINA,CA 19.9,"13,67",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+128,32210,18.03.2025 12:44:00,0 zile,0000000000000,M,SLATINA,CA 125,"52,40",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+129,32210,18.03.2025 12:44:00,0 zile,0000000000000,M,SLATINA,CA 15.3,"16,60",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+130,32360,21.03.2025 6:59:00,74 ani 2 luni ,1501226381468,M,GANEASA,CA 19.9,"46,21",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"87,77"
+131,32429,21.03.2025 9:17:00,68 ani 10 luni ,2560501163245,F,SLATINA,CA 15.3,"7,24",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"89,27"
+132,32453,21.03.2025 9:46:00,75 ani 11 luni ,2490330284371,F,SLATINA,CA 125,"9,25",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+133,32453,21.03.2025 9:46:00,75 ani 11 luni ,2490330284371,F,SLATINA,CA 19.9,"16,44",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+134,32569,24.03.2025 9:47:00,75 ani 2 luni ,1500123284386,M,SLATINA,CA 19.9,"14,62",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,134 - Tumora maligna a prostatei,"68,26"
+135,32572,24.03.2025 10:03:00,75 ani 10 luni ,2490515284381,F,VALEA MARE,CA 19.9,"19,52",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,105 - Tumori maligne ale pancreasului,"76,15"
+136,32644,25.03.2025 8:53:00,52 ani 8 luni ,2720720284364,F,SLATINA,CA 15.3,"10,97",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"78,21"
+137,32644,25.03.2025 8:53:00,52 ani 8 luni ,2720720284364,F,SLATINA,CA 125,"14,22",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"78,21"
+138,32644,25.03.2025 8:53:00,52 ani 8 luni ,2720720284364,F,SLATINA,CA 19.9,"15,11",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"78,21"
+139,32659,25.03.2025 12:34:00,68 ani ,1570308284391,M,SLATINA,CA 19.9,"199,96",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+140,32665,26.03.2025 7:06:00,66 ani 11 luni ,1580426280818,M,OSICA DE SUS,CA 19.9,"8,42",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,105 - Tumori maligne ale pancreasului,"93,46"
+141,32708,26.03.2025 9:15:00,29 ani 5 luni ,2950930282221,F,IZBICENI,CA 19.9,"33,42",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"120,37"
+142,32747,27.03.2025 7:27:00,57 ani 1 luna ,1680211284380,M,SLATINA,CA 19.9,"167,76",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+143,32749,27.03.2025 7:32:00,57 ani 9 luni ,2670603284389,F,SLATINA,CA 125,"15,33",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+144,32749,27.03.2025 7:32:00,57 ani 9 luni ,2670603284389,F,SLATINA,CA 15.3,"24,16",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+145,32918,28.03.2025 8:20:00,66 ani 8 luni ,2580706284366,F,PLESOIU,CA 15.3,17,U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+146,32918,28.03.2025 8:20:00,66 ani 8 luni ,2580706284366,F,PLESOIU,CA 125,"7,14",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+147,32918,28.03.2025 8:20:00,66 ani 8 luni ,2580706284366,F,PLESOIU,CA 19.9,"8,97",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+148,32946,28.03.2025 8:45:00,75 ani 4 luni ,1491109287721,M,PLESOIU,CA 19.9,"331,21",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"61,43"
+149,32964,28.03.2025 9:42:00,82 ani 6 luni ,1420918284375,M,PERIETI,CA 19.9,"96,13",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,105 - Tumori maligne ale pancreasului,"69,27"
+150,32993,31.03.2025 7:26:00,73 ani 8 luni ,2510701284373,F,SLATINA,CA 15.3,"16,64",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"86,22"
+151,33263,02.04.2025 6:59:00,56 ani 3 luni ,2681213280795,F,SLATINA,CA 125,"11,64",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"102,9"
+152,33458,03.04.2025 7:25:00,42 ani 1 luna ,2830208283554,F,MARUNTEI,CA 15.3,"15,27",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,"92,39"
+153,33494,03.04.2025 8:29:00,61 ani 10 luni ,2630514284364,F,SLATINA,CA 125,"24,54",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+154,33500,03.04.2025 8:31:00,70 ani 5 luni ,1541005284372,M,SLATINA,CA 19.9,"8,74",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+155,33501,03.04.2025 8:32:00,72 ani 2 luni ,2530107038624,F,VALENI,CA 15.3,"15,09",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+156,33537,03.04.2025 9:16:00,32 ani ,2930304284555,F,BALTENI,CA 15.3,8,U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+157,33834,07.04.2025 9:13:00,64 ani 8 luni ,2600715284361,F,SLATINA,CA 19.9,"15,4",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,099 - Tumora maligna a jonctiunii rectosigmoidiene,"86,36"
+158,33867,07.04.2025 9:56:00,62 ani 2 luni ,2630131287720,F,PIATRA-OLT,CA 125,"5,74",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"95,65"
+159,33891,07.04.2025 13:44:00,52 ani 11 luni ,2720410284384,F,SLATINA,CA 125,"37,13",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+160,33891,07.04.2025 13:44:00,52 ani 11 luni ,2720410284384,F,SLATINA,CA 15.3,"8,07",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+161,33891,07.04.2025 13:44:00,52 ani 11 luni ,2720410284384,F,SLATINA,CA 19.9,"40,64",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+162,33897,08.04.2025 6:55:00,74 ani 3 luni ,1501226381468,M,GANEASA,CA 19.9,"42,92",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,86
+163,34027,08.04.2025 12:01:00,0 zile,0000000000000,M,SLATINA,CA 125,"143,55",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+164,34027,08.04.2025 12:01:00,0 zile,0000000000000,M,SLATINA,CA 15.3,"42,05",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+165,34027,08.04.2025 12:01:00,0 zile,0000000000000,M,SLATINA,CA 19.9,"83,3",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+166,34052,09.04.2025 7:28:00,71 ani 1 luna ,2540225284398,F,SLATINA,CA 125,"9,6",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,130 - Tumora maligna a ovarului,"81,47"
+167,34060,09.04.2025 7:46:00,49 ani 8 luni ,2750717284397,F,SLATINA,CA 15.3,"10,74",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+168,34088,09.04.2025 8:23:00,66 ani 6 luni ,2580927284375,F,SLATINA,CA 19.9,"8,38",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"91,93"
+169,34159,09.04.2025 9:23:00,76 ani 7 luni ,2480821284387,F,SLATINA,CA 15.3,"19,85",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"62,49"
+170,34159,09.04.2025 9:23:00,76 ani 7 luni ,2480821284387,F,SLATINA,CA 125,"7,03",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"62,49"
+171,34308,10.04.2025 9:45:00,58 ani 5 luni ,2661106381452,F,SLATINA,CA 19.9,"28,17",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"98,74"
+172,34308,10.04.2025 9:45:00,58 ani 5 luni ,2661106381452,F,SLATINA,CA 15.3,"10,95",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"98,74"
+173,34326,10.04.2025 11:05:00,62 ani 4 luni ,2621125280814,F,CIOROIASU,CA 19.9,"67,34",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"93,03"
+174,34521,22.04.2025 10:04:00,63 ani 3 luni ,2620113287129,F,SCORNICESTI,CA 19.9,&lt;1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,242 - Diabetul zaharat neinsulino-dependent,"94,91"
+175,34601,23.04.2025 9:01:00,50 ani 1 luna ,2750303287121,F,SCORNICESTI,CA 125,"8,44",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"84,7"
+176,34601,23.04.2025 9:01:00,50 ani 1 luna ,2750303287121,F,SCORNICESTI,CA 15.3,"19,49",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"84,7"
+177,34601,23.04.2025 9:01:00,50 ani 1 luna ,2750303287121,F,SCORNICESTI,CA 19.9,"20,86",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"84,7"
+178,34641,24.04.2025 7:06:00,64 ani 4 luni ,2601201284366,F,SLATINA,CA 19.9,&lt;1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"47,84"
+179,34735,25.04.2025 8:20:00,69 ani 6 luni ,2551014284367,F,SLATINA,CA 15.3,"19,82",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+180,34781,28.04.2025 6:59:00,81 ani 5 luni ,1431122284374,M,SLATINA,CA 19.9,"10,03",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+181,34930,29.04.2025 11:20:00,48 ani 4 luni ,2761212284394,F,SLATINA,CA 15.3,"18,13",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+182,35017,05.05.2025 7:53:00,59 ani 3 luni ,1660120284404,M,SLATINA,CA 19.9,"17,93",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"98,33"
+183,35074,05.05.2025 9:00:00,77 ani 11 luni ,1470528284369,M,CARLOGANI,CA 19.9,"4,37",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"38,88"
+184,35132,05.05.2025 12:16:00,69 ani ,2560501163245,F,SLATINA,CA 15.3,"7,48",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"77,58"
+185,35143,06.05.2025 7:05:00,74 ani 4 luni ,1501226381468,M,GANEASA,CA 19.9,"49,15",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"88,23"
+186,35255,06.05.2025 9:32:00,62 ani 8 luni ,1620810282248,M,CILIENI,CA 19.9,&lt;1,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,"96,52"
+187,35266,06.05.2025 9:54:00,82 ani 7 luni ,1420918284375,M,PERIETI,CA 19.9,"67,36",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+188,35288,06.05.2025 11:36:00,70 ani ,1550410287726,M,GANEASA,CA 19.9,"9,76",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"74,17"
+189,35341,07.05.2025 8:11:00,58 ani 9 luni ,2660806284386,F,VALENI,CA 15.3,"12,39",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,27"
+190,35384,07.05.2025 9:07:00,56 ani 4 luni ,2681219284369,F,SLATINA,CA 15.3,"15,79",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"96,63"
+191,35391,07.05.2025 9:15:00,77 ani 5 luni ,2471207283373,F,NICOLAE TITULESCU,CA 19.9,"13,79",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"83,76"
+192,35470,08.05.2025 7:33:00,69 ani 1 luna ,2560327284377,F,SLATINA,CA 125,"12,49",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+193,35513,08.05.2025 8:35:00,74 ani ,2510501284413,F,BALTENI,CA 125,"2,47",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"56,17"
+194,35513,08.05.2025 8:35:00,74 ani ,2510501284413,F,BALTENI,CA 19.9,"13,33",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"56,17"
+195,35513,08.05.2025 8:35:00,74 ani ,2510501284413,F,BALTENI,CA 15.3,"17,48",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"56,17"
+196,35519,08.05.2025 8:47:00,41 ani 8 luni ,1830820285266,M,CURTISOARA,CA 19.9,"8,8",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,100 - Tumora maligna a rectului,"97,16"
+197,35603,09.05.2025 7:10:00,26 ani 7 luni ,2980914284561,F,SLATINA,CA 19.9,"11,68",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"95,22"
+198,35435,07.05.2025 12:23:00,0 zile,0000000000000,M,SLATINA,CA 125,52.23,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+199,35435,07.05.2025 12:23:00,0 zile,0000000000000,M,SLATINA,CA 15.3,16.36,U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+200,35435,07.05.2025 12:23:00,0 zile,0000000000000,M,SLATINA,CA 19.9,22.89,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+201,35824,12.05.2025 9:27:00,75 ani 1 luna ,2500328283379,F,SLATINA,CA 19.9,"6,42",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,"61,67"
+202,35824,12.05.2025 9:27:00,75 ani 1 luna ,2500328283379,F,SLATINA,CA 125,"22,06",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,"61,67"
+203,35873,13.05.2025 6:58:00,57 ani 2 luni ,1680226283433,M,SLATINA,CA 19.9,"14,77",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+204,35987,14.05.2025 7:17:00,57 ani 4 luni ,1671217282247,M,TIA MARE,CA 19.9,"20,25",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"67,58"
+205,36030,14.05.2025 8:21:00,61 ani 5 luni ,2631205284371,F,SLATINA,CA 19.9,"4,04",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"94,22"
+206,36030,14.05.2025 8:21:00,61 ani 5 luni ,2631205284371,F,SLATINA,CA 125,"7,67",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"94,22"
+207,36030,14.05.2025 8:21:00,61 ani 5 luni ,2631205284371,F,SLATINA,CA 15.3,"23,43",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"94,22"
+208,36080,14.05.2025 10:27:00,66 ani 6 luni ,2581108284432,F,SLATINA,CA 15.3,"20,21",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+209,36112,15.05.2025 7:27:00,50 ani 3 luni ,2750210284373,F,DOBROTINET,CA 15.3,"7,01",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,661 - Osteoporoza,
+210,36113,15.05.2025 7:28:00,80 ani 6 luni ,2441029284361,F,SLATIOARA,CA 19.9,"23,59",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"57,63"
+211,36113,15.05.2025 7:28:00,80 ani 6 luni ,2441029284361,F,SLATIOARA,CA 125,"12,04",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"57,63"
+212,36113,15.05.2025 7:28:00,80 ani 6 luni ,2441029284361,F,SLATIOARA,CA 15.3,"19,43",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"57,63"
+213,36116,15.05.2025 7:35:00,55 ani 2 luni ,2700216283422,F,SLATINA,CA 15.3,"27,39",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"91,26"
+214,36132,15.05.2025 8:05:00,36 ani 5 luni ,2881127284544,F,SLATIOARA,CA 15.3,"14,23",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+215,36148,15.05.2025 8:24:00,71 ani 2 luni ,2540313284366,F,SLATINA,CA 19.9,"17,97",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"74,14"
+216,36158,15.05.2025 8:49:00,32 ani 8 luni ,2920902280021,F,IPOTESTI,CA 15.3,"6,48",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+217,36271,16.05.2025 9:11:00,47 ani 3 luni ,2780119284395,F,SLATINA,CA 15.3,"9,58",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,"106,84"
+218,36314,19.05.2025 7:11:00,72 ani 5 luni ,2521127284386,F,SLATINA,CA 15.3,"18,63",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"67,04"
+219,36356,19.05.2025 8:11:00,81 ani 1 luna ,1440402284381,M,BALTENI,CA 19.9,"40,74",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,
+220,36402,19.05.2025 8:57:00,38 ani 7 luni ,2861019284544,F,SLATINA,CA 19.9,"3,45",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,"114,76"
+221,36435,19.05.2025 9:58:00,83 ani 3 luni ,2420201287735,F,STREJESTI,CA 19.9,"5,82",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"53,33"
+222,36463,20.05.2025 6:59:00,51 ani 10 luni ,1730624284376,M,SLATINA,CA 19.9,"13,54",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+223,36471,20.05.2025 7:42:00,69 ani 3 luni ,2560218284389,F,SLATINA,CA 125,"7,78",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"20,45"
+224,36575,21.05.2025 8:44:00,66 ani 4 luni ,2590107287125,F,MIHAILESTI POPESTI,CA 19.9,"267,68",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,583 - Alte boli ale ficatului,"30,45"
+225,36575,21.05.2025 8:44:00,66 ani 4 luni ,2590107287125,F,MIHAILESTI POPESTI,CA 125,"18,53",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,583 - Alte boli ale ficatului,"30,45"
+226,36564,21.05.2025 8:07:00,1 zi,0000000000000,M,SLATINA,CA 19.9,82.08,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+227,36564,21.05.2025 8:07:00,1 zi,0000000000000,M,SLATINA,CA 125,370.83,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+228,36564,21.05.2025 8:07:00,1 zi,0000000000000,M,SLATINA,CA 15.3,78.44,U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+229,36624,22.05.2025 6:58:00,57 ani 3 luni ,1680211284380,M,SLATINA,CA 19.9,"135,63",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+230,36636,22.05.2025 7:32:00,79 ani 6 luni ,2451029284361,F,SLATINA,CA 15.3,"15,9",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"35,09"
+231,36642,22.05.2025 7:39:00,85 ani 9 luni ,2390817284363,F,SLATINA,CA 15.3,"12,9",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"64,85"
+232,36649,22.05.2025 8:10:00,1 zi,0000000000000,M,SLATINA,CA 19.9,"82,51",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+233,36649,22.05.2025 8:10:00,1 zi,0000000000000,M,SLATINA,CA 125,"374,9",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+234,36649,22.05.2025 8:10:00,1 zi,0000000000000,M,SLATINA,CA 15.3,"76,54",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+235,36713,23.05.2025 8:20:00,60 ani 7 luni ,2641014284373,F,SLATINA,CA 15.3,"7,23",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"93,89"
+236,36761,26.05.2025 7:32:00,70 ani 11 luni ,2540612284380,F,SLATINA,CA 19.9,"21,55",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,454 - Cardiopatia hipertensiva,"82,82"
+237,36814,26.05.2025 8:44:00,69 ani ,2560501163245,F,SLATINA,CA 15.3,"6,99",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"92,02"
+238,36893,27.05.2025 7:36:00,51 ani 3 luni ,2740201284364,F,SLATINA,CA 19.9,"2,8",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,100 - Tumora maligna a rectului,"102,29"
+239,36895,27.05.2025 7:38:00,54 ani 9 luni ,1700810380011,M,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,588 - Alte boli ale pancreasului,"99,12"
+240,36906,27.05.2025 8:09:00,54 ani 1 luna ,2710420284410,F,SLATINA,CA 19.9,"17,77",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+241,36918,27.05.2025 8:41:00,52 ani 10 luni ,2720720284364,F,SLATINA,CA 15.3,"10,71",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+242,36918,27.05.2025 8:41:00,52 ani 10 luni ,2720720284364,F,SLATINA,CA 125,"16,58",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+243,36937,27.05.2025 10:11:00,34 ani 6 luni ,2901110284567,F,BREBENI,CA 19.9,"1,57",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,105 - Tumori maligne ale pancreasului,"120,8"
+244,36937,27.05.2025 10:11:00,34 ani 6 luni ,2901110284567,F,BREBENI,CA 125,"15,82",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,105 - Tumori maligne ale pancreasului,"120,8"
+245,36955,28.05.2025 7:20:00,59 ani 8 luni ,2650908284387,F,VERGULEASA,CA 19.9,"66,85",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+246,36971,28.05.2025 8:30:00,26 ani 4 luni ,2990120284565,F,SLATINA,CA 15.3,"20,01",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+247,37065,29.05.2025 7:15:00,49 ani 7 luni ,1751002284367,M,SLATINA,CA 19.9,&lt;1,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,462 - Cardiopatie ischemica cronica,"99,72"
+248,37197,30.05.2025 8:54:00,77 ani 9 luni ,1470802284397,M,SLATINA,CA 19.9,"6,71",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,096 - Tumori maligne ale stomacului,"65,38"
+249,37477,03.06.2025 6:54:00,74 ani 5 luni ,1501226381468,M,GANEASA,CA 19.9,"57,15",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"91,71"
+250,37514,03.06.2025 7:59:00,67 ani 8 luni ,1570919284375,M,SLATINA,CA 19.9,"5,37",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"91,29"
+251,37629,03.06.2025 15:33:00,4 zile,0000000000000,M,SLATINA,CA 125,8.67,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+252,37629,03.06.2025 15:33:00,4 zile,0000000000000,M,SLATINA,CA 15.3,12.79,U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+253,37629,03.06.2025 15:33:00,4 zile,0000000000000,M,SLATINA,CA 19.9,4.63,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+254,37639,04.06.2025 7:04:00,65 ani 1 luna ,2600504284372,F,SLATINA,CA 15.3,"18,25",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"75,04"
+255,37719,04.06.2025 9:20:00,57 ani 3 luni ,2680217284389,F,SLATINA,CA 19.9,"150,96",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+256,37996,06.06.2025 8:30:00,40 ani 5 luni ,2841209284558,F,SLATINA,CA 15.3,"4,46",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"102,33"
+257,37996,06.06.2025 8:30:00,40 ani 5 luni ,2841209284558,F,SLATINA,CA 125,"9,08",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"102,33"
+258,37996,06.06.2025 8:30:00,40 ani 5 luni ,2841209284558,F,SLATINA,CA 19.9,"7,39",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"102,33"
+259,38090,10.06.2025 7:53:00,67 ani 9 luni ,2570814284417,F,SLATINA,CA 19.9,"45,05",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"46,38"
+260,38226,11.06.2025 7:20:00,56 ani 5 luni ,2681227284377,F,SLATINA,CA 15.3,"25,54",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+261,38426,11.06.2025 11:49:00,69 ani 1 luna ,2560501163245,F,SLATINA,CA 15.3,"6,77",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"89,7"
+262,38428,11.06.2025 12:29:00,63 ani 10 luni ,2610808284380,F,MOVILENI,CA 15.3,"13,91",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"97,42"
+263,38462,12.06.2025 7:42:00,67 ani 4 luni ,2580131284367,F,SLATINA,CA 15.3,"4,79",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"88,19"
+264,38484,12.06.2025 8:31:00,53 ani 4 luni ,1720125284380,M,CARLOGANI,CA 19.9,"7,09",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"110,36"
+265,38503,12.06.2025 9:54:00,62 ani 6 luni ,2621118280796,F,SLATINA,CA 19.9,"13,74",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"100,98"
+266,38503,12.06.2025 9:54:00,62 ani 6 luni ,2621118280796,F,SLATINA,CA 15.3,"11,6",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"100,98"
+267,38633,16.06.2025 7:09:00,81 ani 2 luni ,1440402284381,M,BALTENI,CA 19.9,"42,88",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+268,38802,17.06.2025 8:35:00,76 ani 10 luni ,1480808284367,M,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"46,1"
+269,38902,18.06.2025 7:18:00,60 ani 11 luni ,2640629287125,F,POTCOAVA,CA 15.3,"21,34",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,127 - Tumora maligna a colului uterin,"56,58"
+270,38902,18.06.2025 7:18:00,60 ani 11 luni ,2640629287125,F,POTCOAVA,CA 125,"17,26",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,127 - Tumora maligna a colului uterin,"56,58"
+271,38902,18.06.2025 7:18:00,60 ani 11 luni ,2640629287125,F,POTCOAVA,CA 19.9,"78,02",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,127 - Tumora maligna a colului uterin,"56,58"
+272,39022,19.06.2025 9:06:00,61 ani 11 luni ,1630622284390,M,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"82,3"
+273,39073,20.06.2025 7:08:00,57 ani 4 luni ,1680211284380,M,SLATINA,CA 19.9,"143,76",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"101,27"
+274,39150,23.06.2025 7:27:00,73 ani 11 luni ,2510701284373,F,SLATINA,CA 15.3,"12,06",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"79,86"
+275,39160,23.06.2025 8:01:00,73 ani 5 luni ,2520110284364,F,SLATINA,CA 15.3,"60,81",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+276,39226,24.06.2025 7:16:00,47 ani 4 luni ,2780127287729,F,SLATINA,CA 19.9,"6,06",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+277,39243,24.06.2025 7:51:00,72 ani 3 luni ,2530315284363,F,POTCOAVA,CA 15.3,"10,27",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"45,57"
+278,39273,24.06.2025 8:34:00,63 ani 2 luni ,2620406284389,F,SLATINA,CA 15.3,"10,76",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+279,39281,24.06.2025 8:55:00,50 ani 2 luni ,1750419284381,M,MILCOV,CA 19.9,"3,46",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+280,39284,24.06.2025 8:59:00,62 ani 9 luni ,2620902284386,F,POBORU,CA 15.3,"20,3",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,130 - Tumora maligna a ovarului,"68,01"
+281,39284,24.06.2025 8:59:00,62 ani 9 luni ,2620902284386,F,POBORU,CA 125,"5,42",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,130 - Tumora maligna a ovarului,"68,01"
+282,39365,25.06.2025 9:09:00,82 ani 2 luni ,2430414284384,F,OPTASI,CA 19.9,"15,05",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,099 - Tumora maligna a jonctiunii rectosigmoidiene,"57,97"
+283,39404,26.06.2025 7:11:00,77 ani ,2480528284393,F,PIETRISU,CA 15.3,"14,64",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"88,87"
+284,39457,26.06.2025 11:38:00,78 ani 2 luni ,2470404284373,F,SLATINA,CA 19.9,"7,05",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,573 - Sindromul intestinului iritabil si alte tulburari functionale ale intestinului,"52,63"
+285,39485,27.06.2025 8:23:00,48 ani 10 luni ,1760819284376,M,CURTISOARA,CA 19.9,"969,22",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,581 - Fibroza si ciroza ficatului,"118,92"
+286,39496,27.06.2025 9:08:00,79 ani 6 luni ,2451211287121,F,MOGOSESTI,CA 19.9,"11,34",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,096 - Tumori maligne ale stomacului,92
+287,39496,27.06.2025 9:08:00,79 ani 6 luni ,2451211287121,F,MOGOSESTI,CA 125,"7,42",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,096 - Tumori maligne ale stomacului,92
+288,39545,30.06.2025 9:04:00,60 ani 11 luni ,1640725287134,M,POTCOAVA FALCOENI,CA 19.9,"16,68",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+289,39738,02.07.2025 7:16:00,66 ani 7 luni ,2581106284365,F,SLATINA,CA 15.3,"8,92",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"88,19"
+290,39738,02.07.2025 7:16:00,66 ani 7 luni ,2581106284365,F,SLATINA,CA 19.9,"26,95",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"88,19"
+291,39758,02.07.2025 7:43:00,64 ani 3 luni ,2610317284369,F,BARASTI,CA 19.9,"5,1",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+292,39809,02.07.2025 9:11:00,50 ani 8 luni ,2741014283386,F,SLATINA,CA 19.9,"3,28",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,870 - Simptome si semne referitoare la aparatul digestiv si la abdomen,"98,63"
+293,39809,02.07.2025 9:11:00,50 ani 8 luni ,2741014283386,F,SLATINA,CA 15.3,"14,96",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,870 - Simptome si semne referitoare la aparatul digestiv si la abdomen,"98,63"
+294,39863,03.07.2025 7:27:00,69 ani 11 luni ,1550717284368,M,CURTISOARA,CA 19.9,"1147,4",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,100 - Tumora maligna a rectului,"86,29"
+295,39874,03.07.2025 7:46:00,75 ani 7 luni ,1491107284392,M,URSOAIA,CA 19.9,"6,81",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"71,87"
+296,39908,03.07.2025 8:32:00,67 ani 9 luni ,2570927400856,F,SLATINA,CA 125,"6,42",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,240 - Alte afectiuni ale tiroidei,"62,31"
+297,39923,03.07.2025 8:55:00,72 ani 7 luni ,2521115284385,F,SLATINA,CA 15.3,"59,05",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+298,39972,04.07.2025 7:15:00,64 ani 1 luna ,1610604287722,M,DOBA,CA 19.9,"17,61",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"90,79"
+299,39983,04.07.2025 7:35:00,60 ani 9 luni ,2641003284367,F,PLESOIU,CA 19.9,5,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"93,89"
+300,40042,04.07.2025 10:01:00,54 ani 11 luni ,2700707284390,F,SLATINA,CA 125,"6,95",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+301,40063,07.07.2025 6:59:00,74 ani 6 luni ,1501226381468,M,GANEASA,CA 19.9,"55,78",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"95,7"
+302,40131,07.07.2025 8:54:00,69 ani 2 luni ,2560501163245,F,SLATINA,CA 15.3,"6,62",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"81,34"
+303,40178,07.07.2025 13:11:00,49 ani 3 luni ,2760317283380,F,DANEASA,CA 15.3,"15,11",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+304,40202,08.07.2025 7:30:00,74 ani 4 luni ,2510220284365,F,SLATINA,CA 19.9,"22,96",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+305,40212,08.07.2025 7:42:00,56 ani ,2690620284388,F,SLATINA,CA 15.3,"8,45",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"107,53"
+306,40313,08.07.2025 9:48:00,61 ani 7 luni ,2631205284371,F,SLATINA,CA 19.9,"3,65",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+307,40347,09.07.2025 7:02:00,75 ani 6 luni ,1500102287724,M,STREJESTI,CA 19.9,"9,33",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"83,19"
+308,40386,09.07.2025 8:06:00,69 ani 10 luni ,2550829284364,F,IANCU JIANU,CA 15.3,"12,48",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"45,78"
+309,40458,09.07.2025 11:46:00,59 ani 1 luna ,2660606283379,F,DANEASA,CA 15.3,15,U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+310,40478,10.07.2025 7:17:00,57 ani 2 luni ,1680424380012,M,SLATINA,CA 19.9,"5,31",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,096 - Tumori maligne ale stomacului,"99,16"
+311,40499,10.07.2025 7:48:00,68 ani 7 luni ,1561209284377,M,SLATINA,CA 19.9,"4,29",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+312,40506,10.07.2025 7:54:00,60 ani 11 luni ,2640730284361,F,SLATINA,CA 15.3,"12,28",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"90,31"
+313,40516,10.07.2025 8:13:00,61 ani 7 luni ,2631129284361,F,SLATINA,CA 125,"13,45",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,127 - Tumora maligna a colului uterin,"82,76"
+314,40516,10.07.2025 8:13:00,61 ani 7 luni ,2631129284361,F,SLATINA,CA 19.9,&lt;1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,127 - Tumora maligna a colului uterin,"82,76"
+315,40633,11.07.2025 9:16:00,47 ani 6 luni ,2771223284382,F,SLATINA,CA 125,"12,04",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"104,49"
+316,40633,11.07.2025 9:16:00,47 ani 6 luni ,2771223284382,F,SLATINA,CA 15.3,"15,72",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"104,49"
+317,40683,14.07.2025 7:34:00,40 ani 7 luni ,1841122284618,M,SLATINA,CA 19.9,"3,64",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+318,40716,14.07.2025 8:55:00,70 ani 5 luni ,2550130284386,F,SLATINA,CA 15.3,"6,49",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"89,12"
+319,40772,15.07.2025 7:51:00,58 ani 9 luni ,2660928284386,F,SLATINA,CA 15.3,"21,9",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,289 - Tulburari de metabolism al lipoproteinelor si alte lipidemii,"96,26"
+320,40900,16.07.2025 9:00:00,28 ani 4 luni ,2970218286044,F,SCORNICESTI,CA 125,"17,89",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+321,40900,16.07.2025 9:00:00,28 ani 4 luni ,2970218286044,F,SCORNICESTI,CA 19.9,"12,31",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+322,40931,16.07.2025 12:01:00,73 ani 4 luni ,2520222284406,F,SLATINA,CA 19.9,"13,7",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+323,40931,16.07.2025 12:01:00,73 ani 4 luni ,2520222284406,F,SLATINA,CA 15.3,"14,15",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+324,41011,18.07.2025 8:45:00,73 ani 9 luni ,2511003284366,F,VALEA MARE,CA 15.3,"16,82",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"59,04"
+325,41020,18.07.2025 9:14:00,48 ani ,2770623284407,F,SLATINA,CA 19.9,"7,85",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+326,41072,21.07.2025 8:34:00,57 ani 5 luni ,1680131284371,M,SLATINA,CA 19.9,"5,75",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+327,41122,22.07.2025 7:29:00,49 ani 9 luni ,2750928283382,F,SLATINA,CA 15.3,"20,96",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,
+328,41122,22.07.2025 7:29:00,49 ani 9 luni ,2750928283382,F,SLATINA,CA 125,"10,66",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,
+329,41158,22.07.2025 8:27:00,64 ani 4 luni ,1610322284393,M,SLATINA,CA 19.9,"10,84",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"97,49"
+330,41159,22.07.2025 8:25:00,47 ani 5 luni ,2780201284375,F,SLATINA,CA 15.3,"6,92",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"106,84"
+331,41173,22.07.2025 9:02:00,73 ani 5 luni ,1520131287126,M,SCORNICESTI,CA 19.9,"3,06",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+332,41167,22.07.2025 8:50:00,57 ani 11 luni ,1670810142050,M,SLATINA,CA 19.9,"7,47",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,242 - Diabetul zaharat neinsulino-dependent,"72,77"
+333,41293,24.07.2025 9:03:00,70 ani 5 luni ,2550210287720,F,GRADINARI,CA 19.9,"22,1",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"90,01"
+334,41332,25.07.2025 7:10:00,57 ani 5 luni ,1680211284380,M,SLATINA,CA 19.9,"198,8",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+335,41395,28.07.2025 7:46:00,83 ani 4 luni ,1420306280801,M,DOBRUN,CA 19.9,"9,24",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,100 - Tumora maligna a rectului,"81,34"
+336,41522,29.07.2025 11:21:00,51 ani 2 luni ,2740527283379,F,COMANI,CA 15.3,"10,35",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+337,41536,29.07.2025 14:24:00,57 ani 11 luni ,2670802282267,F,RUSANESTI,CA 19.9,&lt; 1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"69,51"
+338,41536,29.07.2025 14:24:00,57 ani 11 luni ,2670802282267,F,RUSANESTI,CA 125,"10,93",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"69,51"
+339,41540,30.07.2025 7:06:00,64 ani 2 luni ,2610529284375,F,SLATINA,CA 15.3,"8,2",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"100,35"
+340,41577,30.07.2025 11:14:00,84 ani 3 luni ,2410401284376,F,MOVILENI,CA 15.3,"7,24",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+341,41606,31.07.2025 7:40:00,66 ani 5 luni ,2590210284391,F,SLATINA,CA 15.3,"21,08",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"79,21"
+342,41606,31.07.2025 7:40:00,66 ani 5 luni ,2590210284391,F,SLATINA,CA 19.9,"45,74",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"79,21"
+343,41621,31.07.2025 8:49:00,27 ani 11 luni ,2970830284561,F,SLATINA,CA 19.9,"16,06",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"115,84"
+344,41746,01.08.2025 10:47:00,66 ani 7 luni ,2581224284380,F,SLATINA,CA 19.9,"6,94",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"88,19"
+345,41792,04.08.2025 7:46:00,41 ani 4 luni ,1840327284597,M,SLATINA,CA 19.9,"4,67",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"119,39"
+346,41793,04.08.2025 7:48:00,71 ani 5 luni ,2540304284398,F,SLATINA,CA 15.3,"19,21",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"91,16"
+347,41834,04.08.2025 9:11:00,51 ani 7 luni ,2731229283376,F,SLATINA,CA 19.9,"5,21",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"102,6"
+348,41847,04.08.2025 9:45:00,69 ani 3 luni ,2560501163245,F,SLATINA,CA 15.3,"8,21",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"88,42"
+349,41855,04.08.2025 9:55:00,65 ani 4 luni ,2600308282209,F,SLATINA,CA 19.9,"6,43",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"54,4"
+350,41899,05.08.2025 6:55:00,59 ani 8 luni ,1651121284362,M,BUCURESTI SECTORUL 3,CA 19.9,"88,18",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"92,5"
+351,41927,05.08.2025 7:43:00,39 ani 3 luni ,2860411160056,F,SLATINA,CA 15.3,"10,46",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,102
+352,42016,05.08.2025 9:11:00,64 ani 2 luni ,2610529284375,F,SLATINA,CA 19.9,"15,45",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+353,42016,05.08.2025 9:11:00,64 ani 2 luni ,2610529284375,F,SLATINA,CA 125,5.95,U/ml,4 - 35,Ser,ELFA,VIDAS KUBE,,
+354,42018,05.08.2025 9:14:00,53 ani 4 luni ,2720309284371,F,SLATINA,CA 125,&lt; 4.00,U/ml,4 - 35,Ser,ELFA,VIDAS KUBE,,
+355,42044,05.08.2025 10:06:00,52 ani 8 luni ,8721114280012,F,BOBICESTI,CA 15.3,"23,72",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+356,42141,06.08.2025 8:25:00,69 ani 2 luni ,1560522287147,M,SCORNICESTI,CA 19.9,"43,55",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,289 - Tulburari de metabolism al lipoproteinelor si alte lipidemii,"99,92"
+357,42164,06.08.2025 8:55:00,61 ani 7 luni ,2640102287135,F,POTCOAVA,CA 15.3,"8,5",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+358,42231,07.08.2025 7:09:00,79 ani 2 luni ,1460606284376,M,SLATINA,CA 19.9,"8,94",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"61,47"
+359,42237,07.08.2025 7:21:00,48 ani 11 luni ,1760819284376,M,CURTISOARA,CA 19.9,"65,17",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,"117,3"
+360,42256,07.08.2025 7:50:00,70 ani 4 luni ,2550308284389,F,MILCOVU DIN DEAL,CA 15.3,"23,58",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+361,42348,08.08.2025 7:08:00,72 ani 8 luni ,2521127284386,F,SLATINA,CA 15.3,"19,66",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"66,11"
+362,42421,08.08.2025 9:57:00,59 ani 10 luni ,2651008287727,F,PIATRA-OLT,CA 15.3,"16,74",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+363,42467,11.08.2025 7:11:00,74 ani 7 luni ,1501226381468,M,GANEASA,CA 19.9,"64,22",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"91,71"
+364,42880,18.08.2025 7:05:00,55 ani ,1700723284364,M,SLATINA,CA 19.9,"25,16",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,"450 - Boli ale valvulei tricuspide, reumatismale","95,88"
+365,42911,18.08.2025 7:51:00,60 ani 2 luni ,2650614284380,F,PRISEACA,CA 19.9,"12,23",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"96,98"
+366,42928,18.08.2025 8:31:00,72 ani 5 luni ,2530314284379,F,SLATINA,CA 19.9,"8,9",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"44,22"
+367,43011,19.08.2025 7:42:00,75 ani 4 luni ,1500419284371,M,BALTENI,CA 19.9,"22,58",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+368,43016,19.08.2025 7:51:00,82 ani 11 luni ,1420823284373,M,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"83,44"
+369,43075,19.08.2025 9:57:00,39 ani 5 luni ,1860303283768,M,GHIMPETENI,CA 19.9,"19,69",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+370,43077,19.08.2025 10:02:00,74 ani ,2510806283379,F,IZVOARELE,CA 125,6.30,U/ml,4 - 35,Ser,ELFA,VIDAS KUBE,,
+371,43118,20.08.2025 7:02:00,57 ani 3 luni ,1680514284381,M,SLATINA,CA 19.9,"6,75",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"72,52"
+372,43216,20.08.2025 11:24:00,35 ani 9 luni ,2891114284557,F,DRAGANESTI-OLT,CA 19.9,"6,56",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"120,02"
+373,43242,21.08.2025 7:44:00,62 ani 11 luni ,2620914284379,F,SLATINA,CA 15.3,"14,07",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"60,6"
+374,43242,21.08.2025 7:44:00,62 ani 11 luni ,2620914284379,F,SLATINA,CA 125,&lt; 4.00,U/ml,4 - 35,Ser,ELFA,VIDAS KUBE,124 - Tumori maligne ale sinului,"60,6"
+375,43242,21.08.2025 7:44:00,62 ani 11 luni ,2620914284379,F,SLATINA,CA 19.9,"8,83",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"60,6"
+376,43243,21.08.2025 7:52:00,32 ani 3 luni ,2930510284565,F,FALCOIU,CA 15.3,"13,81",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+377,43282,21.08.2025 9:34:00,52 ani 6 luni ,1730127282233,M,IZBICENI,CA 19.9,"38,8",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"111,16"
+378,43286,21.08.2025 9:57:00,68 ani ,2570807287124,F,SCORNICESTI,CA 125,4.61,U/ml,4 - 35,Ser,ELFA,VIDAS KUBE,242 - Diabetul zaharat neinsulino-dependent,"80,57"
+379,43381,25.08.2025 6:55:00,74 ani 7 luni ,1501226381468,M,GANEASA,CA 19.9,"86,9",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+380,43405,25.08.2025 7:55:00,48 ani 1 luna ,1770719284370,M,SLATINA,CA 19.9,"101,43",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"125,15"
+381,43431,25.08.2025 8:44:00,67 ani 3 luni ,1580426280818,M,OSICA DE SUS,CA 19.9,"9,54",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+382,43475,25.08.2025 11:51:00,69 ani 3 luni ,2560501163245,F,SLATINA,CA 15.3,"7,92",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"84,05"
+383,43480,25.08.2025 16:03:00,36 ani 5 luni ,2890317284561,F,SLATINA,CA 15.3,"10,1",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+384,43609,27.08.2025 7:54:00,49 ani 5 luni ,2760307284360,F,SLATINA,CA 15.3,"15,06",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"95,16"
+385,43660,27.08.2025 10:06:00,41 ani 1 luna ,2840713284597,F,SLATINA,CA 125,9.57,U/ml,4 - 35,Ser,ELFA,VIDAS KUBE,,"112,04"
+386,43669,27.08.2025 11:28:00,72 ani 11 luni ,1520828034992,M,PIATRA-OLT,CA 15.3,"21,44",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"80,13"
+387,43743,29.08.2025 7:05:00,57 ani 6 luni ,1680211284380,M,SLATINA,CA 19.9,"162,07",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+388,43778,29.08.2025 9:12:00,59 ani 8 luni ,1651222287129,M,SCORNICESTI,CA 19.9,"18,17",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"92,92"
+389,43874,01.09.2025 12:14:00,75 ani 5 luni ,1500328284416,M,VERGULEASA,CA 19.9,&lt; 1,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,"37,49"
+390,44010,03.09.2025 7:51:00,72 ani 11 luni ,2521002284371,F,SLATINA,CA 125,7.72,U/ml,4 - 35,Ser,ELFA,VIDAS KUBE,,"65,2"
+391,44078,03.09.2025 11:15:00,77 ani 4 luni ,2480407284396,F,SLATINA,CA 19.9,"23,7",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"70,03"
+392,44111,04.09.2025 8:01:00,59 ani ,2660806284386,F,VALENI,CA 15.3,"12,05",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"87,29"
+393,44114,04.09.2025 8:03:00,69 ani 3 luni ,1560522287147,M,SCORNICESTI,CA 19.9,"33,74",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,"580 - Hepatita cronica, neclasata la alte locuri","98,66"
+394,44161,05.09.2025 7:03:00,81 ani 9 luni ,1431122284374,M,SLATINA,CA 19.9,"10,68",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+395,44165,05.09.2025 7:04:00,50 ani 7 luni ,2750127284374,F,SLATINA,CA 125,&lt; 4.00,U/ml,4 - 35,Ser,ELFA,VIDAS KUBE,,
+396,44216,05.09.2025 8:20:00,57 ani 3 luni ,2680513284389,F,CURTISOARA,CA 15.3,"7,81",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+397,44282,08.09.2025 7:05:00,74 ani 8 luni ,1501226381468,M,GANEASA,CA 19.9,"82,7",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"90,16"
+398,44433,09.09.2025 8:56:00,40 ani 1 luna ,1850731284572,M,CURTISOARA,CA 19.9,"3,98",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"111,74"
+399,44477,09.09.2025 14:08:00,53 ani 7 luni ,1720125284380,M,CARLOGANI,CA 19.9,"9,32",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"95,86"
+400,44494,10.09.2025 7:34:00,60 ani 10 luni ,2641014284373,F,SLATINA,CA 15.3,"7,2",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"90,31"
+401,44494,10.09.2025 7:34:00,60 ani 10 luni ,2641014284373,F,SLATINA,CA 125,"5,96",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"90,31"
+402,44521,10.09.2025 8:34:00,75 ani 10 luni ,1491109287721,M,PLESOIU,CA 19.9,"294,12",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"57,77"
+403,44532,10.09.2025 8:53:00,73 ani 10 luni ,2511028284387,F,SLATINA,CA 15.3,"14,7",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"92,46"
+404,44540,10.09.2025 9:14:00,62 ani 9 luni ,2621201325541,F,SLATINA,CA 19.9,"15,04",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"97,48"
+405,44594,10.09.2025 14:52:00,0 zile,0000000000000,M,SLATINA,CA 125,71.94,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"13,38"
+406,44594,10.09.2025 14:52:00,0 zile,0000000000000,M,SLATINA,CA 15.3,27,U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"13,38"
+407,44594,10.09.2025 14:52:00,0 zile,0000000000000,M,SLATINA,CA 19.9,50.64,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"13,38"
+408,44652,11.09.2025 8:57:00,74 ani 4 luni ,2510504284366,F,SLATINA,CA 15.3,"7,37",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+409,44690,11.09.2025 11:16:00,67 ani 2 luni ,2580706284366,F,PLESOIU,CA 15.3,"16,46",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+410,44690,11.09.2025 11:16:00,67 ani 2 luni ,2580706284366,F,PLESOIU,CA 125,"5,36",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+411,44690,11.09.2025 11:16:00,67 ani 2 luni ,2580706284366,F,PLESOIU,CA 19.9,"8,09",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+412,44800,15.09.2025 7:14:00,56 ani 9 luni ,2681213280795,F,SLATINA,CA 125,"11,3",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"101,73"
+413,44826,15.09.2025 8:18:00,75 ani 7 luni ,1500123284386,M,SLATINA,CA 19.9,"14,28",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,134 - Tumora maligna a prostatei,"81,01"
+414,44830,15.09.2025 8:29:00,78 ani ,2470825287123,F,SCORNICESTI,CA 15.3,"7,03",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+415,44863,15.09.2025 9:15:00,48 ani ,2770915284387,F,SLATINA,CA 19.9,"31,94",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+416,44863,15.09.2025 9:15:00,48 ani ,2770915284387,F,SLATINA,CA 125,"10,33",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+417,44914,15.09.2025 13:53:00,72 ani 4 luni ,2530418284365,F,SLATINA,CA 19.9,"39,95",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"90,08"
+418,44988,16.09.2025 9:02:00,44 ani 4 luni ,2810504284551,F,SLATINA,CA 15.3,"13,17",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+419,45109,17.09.2025 9:30:00,83 ani 6 luni ,1420219284372,M,SLATINA,CA 19.9,"48,17",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,096 - Tumori maligne ale stomacului,"88,28"
+420,45149,17.09.2025 12:41:00,0 zile,0000000000000,M,SLATINA,CA 19.9,"14,87",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"13,09"
+421,45149,17.09.2025 12:41:00,0 zile,0000000000000,M,SLATINA,CA 125,"49,97",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"13,09"
+422,45149,17.09.2025 12:41:00,0 zile,0000000000000,M,SLATINA,CA 15.3,"15,71",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"13,09"
+423,45155,18.09.2025 7:00:00,64 ani 1 luna ,2610722284373,F,SLATINA,CA 125,"11,82",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"75,63"
+424,45155,18.09.2025 7:00:00,64 ani 1 luna ,2610722284373,F,SLATINA,CA 19.9,&lt;1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"75,63"
+425,45204,18.09.2025 8:49:00,56 ani 9 luni ,2681127283381,F,SLATINA,CA 15.3,"17,04",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+426,45242,18.09.2025 11:02:00,74 ani 7 luni ,2510123287728,F,GANEASA,CA 15.3,"11,69",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"76,11"
+427,45358,22.09.2025 8:34:00,65 ani ,2600826287131,F,POBORU,CA 19.9,"19,19",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,583 - Alte boli ale ficatului,"59,75"
+428,45358,22.09.2025 8:34:00,65 ani ,2600826287131,F,POBORU,CA 125,"9,7",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,583 - Alte boli ale ficatului,"59,75"
+429,45377,22.09.2025 9:24:00,64 ani 6 luni ,2610302284361,F,GRECI,CA 15.3,"22,4",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"88,51"
+430,45389,22.09.2025 10:02:00,50 ani 11 luni ,1741019284381,M,SLATINA,CA 19.9,"27,01",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"110,59"
+431,45464,23.09.2025 8:31:00,75 ani ,2500908284398,F,FLORU,CA 15.3,"7,31",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"70,99"
+432,45551,24.09.2025 8:27:00,62 ani 2 luni ,1630721163235,M,CRAIOVA,CA 19.9,"21,35",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"70,8"
+433,45582,24.09.2025 9:44:00,66 ani 4 luni ,1590426163214,M,SLATINA,CA 19.9,"169,56",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"64,58"
+434,45615,25.09.2025 7:02:00,64 ani 3 luni ,1610604287722,M,DOBA,CA 19.9,"29,7",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"87,6"
+435,45623,25.09.2025 7:25:00,62 ani 6 luni ,1630303283373,M,DRAGANESTI-OLT,CA 19.9,"6,52",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,203 - Anemia prin carenta de fier,
+436,45653,25.09.2025 9:17:00,63 ani 8 luni ,2620113287129,F,SCORNICESTI,CA 19.9,&lt;1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"83,43"
+437,45679,26.09.2025 7:06:00,57 ani 7 luni ,1680211284380,M,SLATINA,CA 19.9,"134,15",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+438,45746,29.09.2025 7:46:00,56 ani 9 luni ,2681227284377,F,SLATINA,CA 15.3,"27,24",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+439,45758,29.09.2025 8:20:00,64 ani 8 luni ,2610113280013,F,PIRSCOVENI,CA 15.3,"10,9",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"69,44"
+440,45851,30.09.2025 8:57:00,62 ani 6 luni ,1630319287727,M,BUCURESTI SECTORUL 6,CA 19.9,"15,55",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"96,75"
+441,45867,30.09.2025 10:19:00,48 ani 8 luni ,2770102381455,F,SLATINA,CA 15.3,"23,41",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+442,46051,02.10.2025 8:33:00,46 ani 6 luni ,2790319424521,F,SLATINA,CA 125,"7,02",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,"87,11"
+443,46074,02.10.2025 9:12:00,69 ani 7 luni ,2560229284360,F,OPORELU,CA 19.9,"174,56",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,"93,02"
+444,46102,02.10.2025 10:42:00,62 ani 8 luni ,2630131287720,F,PIATRA-OLT,CA 125,"6,22",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"91,29"
+445,46205,06.10.2025 7:12:00,74 ani 9 luni ,1501226381468,M,GANEASA,CA 19.9,"91,79",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"84,36"
+446,46275,06.10.2025 9:42:00,62 ani 1 luna ,2630820287744,F,GANEASA,CA 125,"6,22",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+447,46280,06.10.2025 9:53:00,72 ani 10 luni ,2521115284385,F,SLATINA,CA 15.3,"77,55",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+448,46340,07.10.2025 7:57:00,85 ani 6 luni ,1400405284369,M,SLATINA,CA 19.9,"17,59",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"60,18"
+449,46407,07.10.2025 10:05:00,61 ani 10 luni ,1631116280797,M,SLATINA,CA 19.9,"90,07",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,"580 - Hepatita cronica, neclasata la alte locuri","107,04"
+450,46433,07.10.2025 14:37:00,46 ani 10 luni ,1781113284381,M,SLATINA,CA 19.9,"14,39",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"104,29"
+451,46504,08.10.2025 9:17:00,78 ani 2 luni ,1470802284397,M,SLATINA,CA 19.9,"15,16",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,096 - Tumori maligne ale stomacului,"62,56"
+452,46506,08.10.2025 9:21:00,71 ani ,2540917284385,F,SLATINA,CA 19.9,"6,17",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"88,39"
+453,46431,07.10.2025 14:12:00,0 zile,0000000000000,M,SLATINA,CA 125,"73,97",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+454,46431,07.10.2025 14:12:00,0 zile,0000000000000,M,SLATINA,CA 15.3,"26,98",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+455,46431,07.10.2025 14:12:00,0 zile,0000000000000,M,SLATINA,CA 19.9,"50,06",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+456,46551,09.10.2025 7:00:00,54 ani 5 luni ,1710509284395,M,SLATINA,CA 19.9,"7,15",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+457,46554,09.10.2025 7:06:00,72 ani 10 luni ,2521127284386,F,SLATINA,CA 15.3,"19,48",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"67,04"
+458,46852,13.10.2025 10:38:00,73 ani 11 luni ,1511021284361,M,MARUNTEI,CA 19.9,"7,44",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+459,46859,13.10.2025 10:56:00,68 ani 11 luni ,2561029284372,F,SLATINA,CA 19.9,"13,19",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,215 - Alte anemii,
+460,46901,14.10.2025 8:11:00,65 ani 9 luni ,2591220284361,F,SLATINA,CA 15.3,"23,35",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+461,46989,15.10.2025 7:05:00,74 ani 7 luni ,2510220284365,F,SLATINA,CA 15.3,"13,54",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+462,47070,15.10.2025 9:30:00,50 ani 8 luni ,2750210284373,F,DOBROTINET,CA 15.3,"7,42",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,712 - Alte afectiuni inflamatorii pelviene la femeie,
+463,47130,16.10.2025 8:14:00,74 ani 5 luni ,2510501284413,F,BALTENI,CA 125,"2,55",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"56,86"
+464,47130,16.10.2025 8:14:00,74 ani 5 luni ,2510501284413,F,BALTENI,CA 19.9,"12,46",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"56,86"
+465,47130,16.10.2025 8:14:00,74 ani 5 luni ,2510501284413,F,BALTENI,CA 15.3,"18,44",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"56,86"
+466,47159,16.10.2025 9:37:00,71 ani 6 luni ,2540401283383,F,CRAMPOIA,CA 19.9,"47,5",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,096 - Tumori maligne ale stomacului,"70,91"
+467,47202,17.10.2025 8:12:00,35 ani 10 luni ,2891123284551,F,SLATINA,CA 15.3,"21,04",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"102,6"
+468,47231,17.10.2025 10:02:00,71 ani 5 luni ,2540420287725,F,PLESOIU,CA 19.9,"47,33",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"65,17"
+469,47325,20.10.2025 10:12:00,52 ani 8 luni ,2730123443017,F,DRAGANESTI-OLT,CA 19.9,"6,19",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"107,2"
+470,47356,21.10.2025 7:35:00,44 ani 1 luna ,2810911385574,F,SLATINA,CA 15.3,"8,45",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+471,47394,21.10.2025 8:30:00,47 ani 8 luni ,2780205284384,F,SLATINA,CA 15.3,"24,36",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+472,47404,21.10.2025 8:40:00,56 ani 10 luni ,2681219284369,F,SLATINA,CA 15.3,"16,38",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,237 - Alte guse netoxice,"94,54"
+473,47422,21.10.2025 9:17:00,41 ani 3 luni ,2840717284563,F,PIATRA-OLT,CA 15.3,"15,28",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+474,47468,22.10.2025 7:22:00,63 ani 6 luni ,2620401284414,F,SLATINA,CA 19.9,"11,67",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"103,63"
+475,47482,22.10.2025 8:18:00,55 ani 4 luni ,2700527287121,F,VITANESTI,CA 15.3,"11,33",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+476,47494,22.10.2025 8:36:00,63 ani 3 luni ,2620624280798,F,SLATINA,CA 125,"6,58",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,"235 - Afectiuni tiroidiene si inrudite, legate de carenta in iod",
+477,47537,23.10.2025 7:01:00,62 ani 1 luna ,2630919287122,F,SLATINA,CA 15.3,"20,63",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,874 - Simptome si semne generale,"94,22"
+478,47537,23.10.2025 7:01:00,62 ani 1 luna ,2630919287122,F,SLATINA,CA 125,"7,95",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,874 - Simptome si semne generale,"94,22"
+479,47537,23.10.2025 7:01:00,62 ani 1 luna ,2630919287122,F,SLATINA,CA 19.9,"13,86",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,874 - Simptome si semne generale,"94,22"
+480,47575,23.10.2025 9:34:00,46 ani 7 luni ,2790227284362,F,SLATINA,CA 19.9,"12,81",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"105,95"
+481,47600,24.10.2025 7:59:00,70 ani 6 luni ,1550410287726,M,GANEASA,CA 19.9,"9,13",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"72,45"
+482,47661,27.10.2025 8:19:00,86 ani 3 luni ,0000000000000,F,SLATINA,CA 125,"8,33",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"72,23"
+483,47661,27.10.2025 8:19:00,86 ani 3 luni ,0000000000000,F,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"72,23"
+484,47661,27.10.2025 8:19:00,86 ani 3 luni ,0000000000000,F,SLATINA,CA 15.3,"18,38",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"72,23"
+485,47662,27.10.2025 8:20:00,41 ani 11 luni ,2831109384972,F,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,82"
+486,47662,27.10.2025 8:20:00,41 ani 11 luni ,2831109384972,F,SLATINA,CA 15.3,"6,31",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,82"
+487,47662,27.10.2025 8:20:00,41 ani 11 luni ,2831109384972,F,SLATINA,CA 125,"12,17",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,82"
+488,47676,27.10.2025 8:52:00,37 ani 4 luni ,2880528035311,F,SCORNICESTI,CA 19.9,"8,31",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+489,47676,27.10.2025 8:52:00,37 ani 4 luni ,2880528035311,F,SCORNICESTI,CA 15.3,"5,67",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+490,47676,27.10.2025 8:52:00,37 ani 4 luni ,2880528035311,F,SCORNICESTI,CA 125,"20,55",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+491,47737,28.10.2025 8:08:00,44 ani 3 luni ,2810716280016,F,SLATINA,CA 15.3,"15,11",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"100,14"
+492,47801,29.10.2025 8:26:00,32 ani 9 luni ,1930129282215,M,GROJDIBODU,CA 19.9,&lt; 1,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"122,1"
+493,47819,29.10.2025 9:24:00,65 ani 7 luni ,2600308282209,F,SLATINA,CA 19.9,"5,61",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"55,02"
+494,47833,29.10.2025 11:43:00,77 ani 3 luni ,1480726284406,M,SLATINA,CA 19.9,"21,08",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"89,44"
+495,47845,30.10.2025 7:02:00,74 ani 3 luni ,2510701284373,F,SLATINA,CA 15.3,"15,62",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"93,02"
+496,47904,31.10.2025 7:45:00,72 ani 7 luni ,2530304284373,F,SLATINA,CA 19.9,&lt;1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,117 - Melanomul malign al pielii,"72,55"
+497,47904,31.10.2025 7:45:00,72 ani 7 luni ,2530304284373,F,SLATINA,CA 15.3,"14,83",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,117 - Melanomul malign al pielii,"72,55"
+498,47904,31.10.2025 7:45:00,72 ani 7 luni ,2530304284373,F,SLATINA,CA 125,"8,74",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,117 - Melanomul malign al pielii,"72,55"
+499,47910,31.10.2025 8:15:00,61 ani 10 luni ,2631205284371,F,SLATINA,CA 19.9,"4,41",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,76"
+500,47910,31.10.2025 8:15:00,61 ani 10 luni ,2631205284371,F,SLATINA,CA 15.3,"25,77",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,76"
+501,47945,03.11.2025 7:08:00,74 ani 10 luni ,1501226381468,M,GANEASA,CA 19.9,"79,32",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"91,18"
+502,47983,03.11.2025 8:08:00,67 ani 9 luni ,2580131284367,F,SLATINA,CA 15.3,"5,63",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"82,53"
+503,48064,03.11.2025 11:19:00,40 ani 3 luni ,2850802284566,F,SLATINA,CA 15.3,"17,68",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,708 - Alte afectiuni ale sanului,
+504,48078,04.11.2025 7:00:00,57 ani 8 luni ,1680211284380,M,SLATINA,CA 19.9,196,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"95,8"
+505,48105,04.11.2025 7:52:00,66 ani 6 luni ,1590426163214,M,SLATINA,CA 19.9,"215,35",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+506,48326,05.11.2025 8:40:00,57 ani 5 luni ,2680603280822,F,SLATINA,CA 19.9,"9,79",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,097 - Tumora maligna a intestinului subtire,"92,95"
+507,48326,05.11.2025 8:40:00,57 ani 5 luni ,2680603280822,F,SLATINA,CA 125,"19,11",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,097 - Tumora maligna a intestinului subtire,"92,95"
+508,48326,05.11.2025 8:40:00,57 ani 5 luni ,2680603280822,F,SLATINA,CA 15.3,"15,5",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,097 - Tumora maligna a intestinului subtire,"92,95"
+509,48338,05.11.2025 8:56:00,48 ani 9 luni ,2770116284364,F,CORBU,CA 19.9,"29,21",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,240 - Alte afectiuni ale tiroidei,"109,03"
+510,48375,05.11.2025 9:58:00,56 ani 9 luni ,2690115284388,F,SLATINA,CA 125,"13,84",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"85,01"
+511,48375,05.11.2025 9:58:00,56 ani 9 luni ,2690115284388,F,SLATINA,CA 15.3,"23,75",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"85,01"
+512,48375,05.11.2025 9:58:00,56 ani 9 luni ,2690115284388,F,SLATINA,CA 19.9,"10,6",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"85,01"
+513,48431,06.11.2025 7:30:00,75 ani 1 luna ,1500914284366,M,SLATINA,CA 19.9,"6,28",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"73,24"
+514,48440,06.11.2025 7:44:00,59 ani 3 luni ,2660806284386,F,VALENI,CA 15.3,"12,3",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"85,9"
+515,48442,06.11.2025 7:51:00,58 ani ,2671104284421,F,SLATINA,CA 19.9,"77,57",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"98,31"
+516,48474,06.11.2025 9:06:00,26 ani 9 luni ,2990108384966,F,DRAGASANI,CA 15.3,"7,23",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+517,48585,07.11.2025 8:45:00,54 ani 10 luni ,2701217282205,F,SLATINA,CA 15.3,"10,85",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,111 - Tumora maligna a bronhiilor si pulmonului,"70,14"
+518,48653,10.11.2025 7:45:00,58 ani 2 luni ,2670814284413,F,SLATINA,CA 125,"13,56",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+519,48653,10.11.2025 7:45:00,58 ani 2 luni ,2670814284413,F,SLATINA,CA 15.3,"10,32",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+520,48653,10.11.2025 7:45:00,58 ani 2 luni ,2670814284413,F,SLATINA,CA 19.9,"13,54",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+521,48660,10.11.2025 7:51:00,58 ani 3 luni ,2670720282226,F,CILIENI,CA 19.9,"14,04",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,289 - Tulburari de metabolism al lipoproteinelor si alte lipidemii,"90,73"
+522,48696,10.11.2025 9:11:00,83 ani 7 luni ,2420315284377,F,SLATINA,CA 15.3,"33,62",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,127 - Tumora maligna a colului uterin,"59,91"
+523,48696,10.11.2025 9:11:00,83 ani 7 luni ,2420315284377,F,SLATINA,CA 125,"18,92",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,127 - Tumora maligna a colului uterin,"59,91"
+524,48787,11.11.2025 7:58:00,67 ani 7 luni ,1580325284368,M,SLATINA,CA 19.9,"25,02",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+525,48848,11.11.2025 9:28:00,73 ani 9 luni ,1520131287126,M,SCORNICESTI,CA 19.9,"3,4",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"89,58"
+526,48925,12.11.2025 7:41:00,62 ani 7 luni ,1630316282228,M,SLATINA,CA 19.9,"4,7",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"81,3"
+527,48956,12.11.2025 8:26:00,58 ani 8 luni ,2670302287129,F,SCORNICESTI,CA 19.9,"30,48",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"104,6"
+528,48956,12.11.2025 8:26:00,58 ani 8 luni ,2670302287129,F,SCORNICESTI,CA 125,"7,66",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"104,6"
+529,48978,12.11.2025 9:29:00,63 ani 4 luni ,2620630284361,F,SLATINA,CA 19.9,"3,48",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,49"
+530,48978,12.11.2025 9:29:00,63 ani 4 luni ,2620630284361,F,SLATINA,CA 15.3,"16,31",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,49"
+531,48978,12.11.2025 9:29:00,63 ani 4 luni ,2620630284361,F,SLATINA,CA 125,"8,42",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,49"
+532,48981,12.11.2025 9:36:00,69 ani 3 luni ,2560717284368,F,SLATINA,CA 19.9,&lt;1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,105 - Tumori maligne ale pancreasului,"91,07"
+533,48996,12.11.2025 10:28:00,71 ani 8 luni ,2540301284365,F,SLATINA,CA 19.9,"24,32",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+534,49016,12.11.2025 12:59:00,0 zile,0000000000000,M,SLATINA,CA 125,"44,52",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+535,49016,12.11.2025 12:59:00,0 zile,0000000000000,M,SLATINA,CA 15.3,"16,52",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+536,49016,12.11.2025 12:59:00,0 zile,0000000000000,M,SLATINA,CA 19.9,"19,85",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,0
+537,49058,13.11.2025 9:14:00,74 ani 9 luni ,2510203282211,F,CILIENI,CA 19.9,"13,9",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,453 - Hipertensiunea esentiala (primara),"91,38"
+538,49059,13.11.2025 9:14:00,44 ani 1 luna ,2810923284544,F,SLATINA,CA 19.9,"55,41",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"109,07"
+539,49059,13.11.2025 9:14:00,44 ani 1 luna ,2810923284544,F,SLATINA,CA 15.3,"24,87",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"109,07"
+540,49059,13.11.2025 9:14:00,44 ani 1 luna ,2810923284544,F,SLATINA,CA 125,"14,94",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"109,07"
+541,49179,14.11.2025 14:09:00,70 ani 3 luni ,1550812284392,M,SLATINA,CA 19.9,"6,36",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+542,49191,17.11.2025 7:09:00,74 ani 10 luni ,2501220284368,F,SLATINA,CA 15.3,"13,67",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+543,49239,17.11.2025 9:04:00,67 ani 9 luni ,2580213284365,F,SLATINA,CA 125,"5,39",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+544,49239,17.11.2025 9:04:00,67 ani 9 luni ,2580213284365,F,SLATINA,CA 15.3,"17,52",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+545,49239,17.11.2025 9:04:00,67 ani 9 luni ,2580213284365,F,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+546,49289,18.11.2025 7:11:00,71 ani 8 luni ,2540301287723,F,COCORASTI,CA 15.3,"17,73",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"99,33"
+547,49383,18.11.2025 13:09:00,0 zile,0000000000000,M,SLATINA,CA 19.9,"35,32",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"14,22"
+548,49383,18.11.2025 13:09:00,0 zile,0000000000000,M,SLATINA,CA 125,"145,62",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"14,22"
+549,49383,18.11.2025 13:09:00,0 zile,0000000000000,M,SLATINA,CA 15.3,"34,11",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"14,22"
+550,49392,19.11.2025 7:13:00,46 ani 3 luni ,2790813035006,F,PITESTI,CA 15.3,"12,15",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"103,92"
+551,49392,19.11.2025 7:13:00,46 ani 3 luni ,2790813035006,F,PITESTI,CA 125,"15,43",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"103,92"
+552,49398,19.11.2025 7:58:00,0 zile,0000000000000,M,SLATINA,CA 19.9,"96,57",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+553,49398,19.11.2025 7:58:00,0 zile,0000000000000,M,SLATINA,CA 125,"357,89",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+554,49398,19.11.2025 7:58:00,0 zile,0000000000000,M,SLATINA,CA 15.3,"70,18",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+555,49423,19.11.2025 8:57:00,51 ani 7 luni ,2740404284361,F,SCHITU,CA 19.9,"40,75",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"120,62"
+556,49428,19.11.2025 9:23:00,45 ani 6 luni ,2800512284543,F,SLATINA,CA 15.3,"6,36",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"113,97"
+557,49602,24.11.2025 7:00:00,69 ani 10 luni ,2560121284365,F,SLATINA,CA 125,"5,88",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,128 - Tumora maligna a corpului uterin,"74,12"
+558,49620,24.11.2025 8:06:00,45 ani 11 luni ,2791209420067,F,SLATINA,CA 125,"23,92",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+559,49647,24.11.2025 9:22:00,83 ani 9 luni ,1420219284372,M,SLATINA,CA 19.9,"49,79",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+560,49690,25.11.2025 6:59:00,57 ani 9 luni ,1680211284380,M,SLATINA,CA 19.9,"134,57",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"102,96"
+561,49709,25.11.2025 8:01:00,55 ani 6 luni ,2700516284388,F,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,"193 - Tumora cavitatii bucale si a organelor digestive, cu evolutie imprevizibila si necunoscuta","101,58"
+562,49812,26.11.2025 8:05:00,70 ani 4 luni ,1550704287722,M,STREJESTII DE SUS,CA 19.9,&lt; 1,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,100 - Tumora maligna a rectului,"91,04"
+563,49839,26.11.2025 9:26:00,61 ani 7 luni ,2640330284381,F,SLATINA,CA 15.3,"12,43",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"91,85"
+564,49839,26.11.2025 9:26:00,61 ani 7 luni ,2640330284381,F,SLATINA,CA 125,"4,05",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"91,85"
+565,49839,26.11.2025 9:26:00,61 ani 7 luni ,2640330284381,F,SLATINA,CA 19.9,"8,87",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"91,85"
+566,49861,26.11.2025 10:44:00,73 ani 9 luni ,2520209282208,F,PIATRA-OLT,CA 19.9,"11,11",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+567,49861,26.11.2025 10:44:00,73 ani 9 luni ,2520209282208,F,PIATRA-OLT,CA 15.3,"22,49",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+568,49880,27.11.2025 7:50:00,61 ani 1 luna ,2641003284367,F,PLESOIU,CA 19.9,"4,61",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"74,96"
+569,49928,28.11.2025 7:48:00,74 ani 11 luni ,1501226381468,M,GANEASA,CA 19.9,"78,92",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"86,87"
+570,49931,28.11.2025 7:58:00,64 ani 9 luni ,1610129284379,M,SLATINA,CA 19.9,"5,81",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"102,19"
+571,50018,02.12.2025 7:51:00,47 ani 7 luni ,2780407284360,F,SLATINA,CA 19.9,"6,9",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,240 - Alte afectiuni ale tiroidei,"104,19"
+572,50018,02.12.2025 7:51:00,47 ani 7 luni ,2780407284360,F,SLATINA,CA 125,"8,92",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,240 - Alte afectiuni ale tiroidei,"104,19"
+573,50092,02.12.2025 9:17:00,61 ani 4 luni ,1640725287134,M,POTCOAVA FALCOENI,CA 19.9,"21,32",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,100 - Tumora maligna a rectului,"94,43"
+574,50129,02.12.2025 10:27:00,45 ani 6 luni ,2800602286043,F,SLATINA,CA 125,"11,99",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"108,33"
+575,50180,03.12.2025 7:36:00,80 ani 1 luna ,2451029284361,F,SLATINA,CA 15.3,"19,49",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"39,44"
+576,50204,03.12.2025 8:22:00,61 ani 1 luna ,2641014284373,F,SLATINA,CA 125,"7,91",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"95,27"
+577,50204,03.12.2025 8:22:00,61 ani 1 luna ,2641014284373,F,SLATINA,CA 15.3,"8,69",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"95,27"
+578,50262,03.12.2025 9:59:00,67 ani 8 luni ,2580315284411,F,SLATINA,CA 19.9,"19,27",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,097 - Tumora maligna a intestinului subtire,"74,09"
+579,50293,03.12.2025 11:22:00,74 ani 1 luna ,2511101287722,F,ARCESTI COT,CA 15.3,"17,53",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+580,50300,03.12.2025 12:10:00,78 ani ,2471105280790,F,ROTUNDA,CA 19.9,"11,93",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+581,50300,03.12.2025 12:10:00,78 ani ,2471105280790,F,ROTUNDA,CA 125,"30,78",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+582,50411,04.12.2025 10:32:00,50 ani 2 luni ,2750917283376,F,SLATINA,CA 15.3,"16,74",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,124 - Tumori maligne ale sinului,"101,05"
+583,50652,08.12.2025 12:33:00,71 ani 4 luni ,2540722400631,F,BALDOVINESTI,CA 19.9,"181,99",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"93,22"
+584,50698,09.12.2025 7:30:00,44 ani 6 luni ,2810522384963,F,SLATINA,CA 15.3,"43,01",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+585,50885,10.12.2025 8:22:00,64 ani 7 luni ,1610421284378,M,SLATINA,CA 19.9,"12,21",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"90,37"
+586,50956,11.12.2025 7:33:00,58 ani 5 luni ,1670616287124,M,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"73,57"
+587,50958,11.12.2025 7:40:00,82 ani 7 luni ,2430414284384,F,OPTASI,CA 19.9,"16,43",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,099 - Tumora maligna a jonctiunii rectosigmoidiene,"62,02"
+588,50986,11.12.2025 8:31:00,52 ani 11 luni ,1730110284381,M,SLATINA,CA 125,"6,94",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+589,50986,11.12.2025 8:31:00,52 ani 11 luni ,1730110284381,M,SLATINA,CA 19.9,"58,18",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+590,51006,11.12.2025 9:07:00,69 ani 3 luni ,2560830284381,F,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+591,51103,12.12.2025 8:54:00,68 ani 8 luni ,2570411035015,F,SCORNICESTI,CA 125,"4,25",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+592,51042,11.12.2025 12:06:00,0 zile,0000000000000,M,SLATINA,CA 125,25.91,U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"111,25"
+593,51042,11.12.2025 12:06:00,0 zile,0000000000000,M,SLATINA,CA 15.3,17.66,U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"111,25"
+594,51042,11.12.2025 12:06:00,0 zile,0000000000000,M,SLATINA,CA 19.9,3031,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"111,25"
+595,51281,15.12.2025 16:04:00,64 ani ,2611127284368,F,SLATINA,CA 19.9,"9,77",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+596,51292,16.12.2025 7:09:00,57 ani 10 luni ,1680211284380,M,SLATINA,CA 19.9,"132,81",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"97,19"
+597,51319,16.12.2025 8:06:00,58 ani 3 luni ,1670901284390,M,SLATINA,CA 19.9,"16,76",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,583 - Alte boli ale ficatului,
+598,51388,17.12.2025 6:57:00,46 ani 6 luni ,2790613284387,F,MARUNTEI,CA 125,"16,41",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,,"107,03"
+599,51421,17.12.2025 8:24:00,77 ani 4 luni ,1480808284367,M,SLATINA,CA 19.9,&lt; 1,U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,098 - Tumora maligna a colonului,"43,9"
+600,51422,17.12.2025 8:28:00,77 ani 2 luni ,2481002284364,F,SLATINA,CA 15.3,"15,78",U/ml,&lt; 32,Ser,Chemiluminescenta,MINDRAY CL-2000i,,
+601,51445,17.12.2025 10:09:00,68 ani 5 luni ,2570712283379,F,DRAGANESTI-OLT,CA 19.9,"7,79",U/ml,&lt; 35,Ser,Chemiluminescenta,MINDRAY CL-2000i,560 - Dispepsia,"65,68"
+602,51506,18.12.2025 10:36:00,69 ani 4 luni ,1560728284364,M,SLATINA,CA 19.9,"23,84",U/ml,&lt; 26,Ser,Chemiluminescenta,MINDRAY CL-2000i,"580 - Hepatita cronica, neclasata la alte locuri","88,49"

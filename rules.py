@@ -16,6 +16,8 @@ DIAGNOSTICE_CSV_PATH = Path(__file__).parent / "Diagnostice.csv"
 GLICEMIE_TEST = "Glucoza serica (glicemie)"
 HEMOGLOBINA_GLICATA_TEST = "Hemoglobina glicata (Hb A1c)"
 CREATININA_TEST = "Creatinina serica"
+# Markeri tumorali (MT folder): CA 125, CA 15.3, CA 19.9
+MT_TESTS = {"CA 125", "CA 15.3", "CA 19.9"}
 
 # Column names (must match prepared dataframe)
 CNP = "CNP"
@@ -145,12 +147,30 @@ def row_filter_exclude_diagnostics_from_csv(df: pd.DataFrame, selected_test: str
     return ~diag_stripped.isin(exclude)
 
 
+def row_filter_mt_exclude_tumor_diagnostics(df: pd.DataFrame, selected_test: str) -> pd.Series:
+    """
+    For MT (markeri tumorali: CA 125, CA 15.3, CA 19.9), exclude rows whose Diagnostic
+    contains 'tumora' or 'tumori' (case-insensitive), so statistics are not skewed by known tumor cases.
+    """
+    if selected_test not in MT_TESTS:
+        return pd.Series(True, index=df.index)
+    if DIAGNOSTIC not in df.columns:
+        return pd.Series(True, index=df.index)
+    diag = df[DIAGNOSTIC].astype(str).str.strip().str.lower()
+    has_tumor = diag.str.contains("tumora|tumori", case=False, na=False, regex=True)
+    return ~has_tumor
+
+
 # List of row filters: (test name or None for all, description, function).
 # Only filters whose test matches selected_test (or test is None) are applied.
 ROW_FILTERS = [
     (CREATININA_TEST, "Rata filtrarii glomerolare >= 90 (exclude < 90)", row_filter_rata_min_90),
     (HEMOGLOBINA_GLICATA_TEST, "Hemoglobina glicată: exclude rezultate <= 4.4", row_filter_hba1c_exclude_leq_44),
     (None, "Diagnostic exclus conform Diagnostice.csv (DA)", row_filter_exclude_diagnostics_from_csv),
+    # MT: exclude rows with diagnostic containing tumora/tumori (one entry per MT test)
+    ("CA 125", "MT: exclude diagnostic tumora/tumori", row_filter_mt_exclude_tumor_diagnostics),
+    ("CA 15.3", "MT: exclude diagnostic tumora/tumori", row_filter_mt_exclude_tumor_diagnostics),
+    ("CA 19.9", "MT: exclude diagnostic tumora/tumori", row_filter_mt_exclude_tumor_diagnostics),
 ]
 
 
