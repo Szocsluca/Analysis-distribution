@@ -488,30 +488,10 @@ def main():
         st.warning("Nicio înregistrare după filtre. Relaxează filtrele.")
         return
 
-    # --- Intervals: always use Intervale de statistica.csv for TGO, TGP, ALP (Fosfataza alcalina), GGT ---
+    # --- Intervals: CSV for TGO, TGP, ALP, GGT. For ALP only: show each set as a tab (no sidebar selector). For others: use first set, no sidebar. ---
     csv_interval_sets = get_csv_interval_sets_for_test(selected_test)
-    interval_set_index = None
-    if csv_interval_sets:
-        options = [s["condition_label"] for s in csv_interval_sets]
-        default_idx = 0
-        # Auto-select ALP (and any conditioned) set from sidebar filters: vârstă + echipament
-        prefer_copii = age_max < 18
-        prefer_adulti = age_min >= 18
-        only_vitros = len(selected_echipamente) > 0 and all("VITROS" in e.upper() for e in selected_echipamente)
-        only_alte = len(selected_echipamente) > 0 and not any("VITROS" in e.upper() for e in selected_echipamente)
-        for i, s in enumerate(csv_interval_sets):
-            age_ok = s["age"] is None or (s["age"] == "copii" and prefer_copii) or (s["age"] == "adulti" and prefer_adulti)
-            eq_ok = s["equipment"] is None or (s["equipment"] == "VITROS" and only_vitros) or (s["equipment"] == "ALTE ECHIPAMENTE" and only_alte)
-            if age_ok and eq_ok:
-                default_idx = i
-                break
-        selected_label = st.sidebar.selectbox(
-            "Set intervale (din Intervale de statistica.csv)",
-            options=options,
-            index=default_idx,
-            help="Pentru ALP (Fosfataza alcalina) intervalele depind de filtrele din meniul stâng: vârstă (copii <18 / adulti ≥18) și echipament (VITROS / alte).",
-        )
-        interval_set_index = options.index(selected_label)
+    is_alp_tabs = selected_test in ("Fosfataza alcalina", "ALP") and len(csv_interval_sets) > 1
+    interval_set_index = 0 if csv_interval_sets and not is_alp_tabs else None
 
     intervals = get_intervals_for_test(selected_test, interval_set_index=interval_set_index, csv_interval_sets=csv_interval_sets)
     use_custom_bins = intervals is not None
@@ -525,13 +505,90 @@ def main():
     if COL_INTERVAL_REF in filtered.columns:
         ref_low, ref_high = parse_reference_interval(filtered[COL_INTERVAL_REF])
 
-    # Optional: two vertical lines to define an interval and see population between them
+    # Optional: two vertical lines (hidden for ALP tabs to avoid key/context confusion)
     v_min, v_max = float(values.min()), float(values.max())
-    st.sidebar.subheader("Interval personalizat (linii verticale)")
-    line1 = st.sidebar.number_input("Punct 1 (pe OX)", value=None, min_value=v_min, max_value=v_max, step=(v_max - v_min) / 100 if v_max > v_min else 0.1, format="%.2f", key="line1")
-    line2 = st.sidebar.number_input("Punct 2 (pe OX)", value=None, min_value=v_min, max_value=v_max, step=(v_max - v_min) / 100 if v_max > v_min else 0.1, format="%.2f", key="line2")
+    if not is_alp_tabs:
+        st.sidebar.subheader("Interval personalizat (linii verticale)")
+        line1 = st.sidebar.number_input("Punct 1 (pe OX)", value=None, min_value=v_min, max_value=v_max, step=(v_max - v_min) / 100 if v_max > v_min else 0.1, format="%.2f", key="line1")
+        line2 = st.sidebar.number_input("Punct 2 (pe OX)", value=None, min_value=v_min, max_value=v_max, step=(v_max - v_min) / 100 if v_max > v_min else 0.1, format="%.2f", key="line2")
+    else:
+        line1, line2 = None, None
     show_interval_lines = line1 is not None and line2 is not None
 
+    if is_alp_tabs:
+        # ALP only: one tab per interval set (Copii VITROS, Adulti VITROS, etc.); data filtered by age + equipment per tab
+        tab_labels = [s["condition_label"] for s in csv_interval_sets]
+        tabs = st.tabs(tab_labels)
+        for tab, ival_set in zip(tabs, csv_interval_sets):
+            with tab:
+                # Subset filtered by this set's age and equipment
+                mask_age = pd.Series(True, index=filtered.index)
+                if "age" in filtered.columns:
+                    if ival_set["age"] == "copii":
+                        mask_age = filtered["age"] < 18
+                    elif ival_set["age"] == "adulti":
+                        mask_age = filtered["age"] >= 18
+                mask_eq = pd.Series(True, index=filtered.index)
+                if COL_ECHIPAMENT in filtered.columns and ival_set["equipment"]:
+                    eq = filtered[COL_ECHIPAMENT].astype(str).str.upper()
+                    if ival_set["equipment"] == "VITROS":
+                        mask_eq = eq.str.contains("VITROS", na=False)
+                    else:
+                        mask_eq = ~eq.str.contains("VITROS", na=False)
+                tab_df = filtered.loc[mask_age & mask_eq]
+                values_tab = tab_df[COL_REZULTAT].dropna()
+                if values_tab.empty:
+                    st.info("Nicio înregistrare pentru acest set de filtre (vârstă + echipament).")
+                    continue
+                intervals_tab = ival_set["intervals"]
+                binned_tab = bin_values_by_intervals(values_tab, intervals_tab)
+                min_str = binned_tab["Min real"].apply(lambda x: str(x) if pd.notna(x) else "—")
+                max_str = binned_tab["Max real"].apply(lambda x: str(x) if pd.notna(x) else "—")
+                fig_tab = go.Figure()
+                fig_tab.add_trace(go.Bar(
+                    x=binned_tab["Interval"],
+                    y=binned_tab["Frecvență"],
+                    name="Frecvență",
+                    opacity=0.7,
+                    customdata=np.column_stack([min_str, max_str]),
+                    hovertemplate="%{x}<br>Frecvență: %{y:,}<br>Min real: %{customdata[0]}<br>Max real: %{customdata[1]}<extra></extra>",
+                ))
+                fig_tab.update_layout(
+                    title=f"Fosfataza alcalina – {ival_set['condition_label']} (n={len(values_tab):,})",
+                    xaxis_title="Interval Rezultat",
+                    yaxis_title="Frecvență",
+                    xaxis_tickangle=-45,
+                    showlegend=False,
+                    height=450,
+                )
+                st.plotly_chart(fig_tab, width="stretch")
+                st.subheader("Intervale: min–max real în date")
+                display_tab = binned_tab.copy()
+                display_tab["Min real"] = display_tab["Min real"].apply(lambda x: str(x) if pd.notna(x) else "—")
+                display_tab["Max real"] = display_tab["Max real"].apply(lambda x: str(x) if pd.notna(x) else "—")
+                n_rows = len(display_tab)
+                table_height = min(36 * n_rows + 52, 1200)
+                st.dataframe(display_tab[["Interval", "Frecvență", "Min real", "Max real"]], width="stretch", hide_index=True, height=table_height)
+                unit_tab = tab_df[COL_UM].dropna().iloc[0] if COL_UM in tab_df.columns and tab_df[COL_UM].notna().any() else ""
+                n_tab = len(values_tab)
+                n_children_tab = int((tab_df.loc[values_tab.index, "age"] < 18).sum()) if "age" in tab_df.columns else 0
+                pct_children_tab = (100.0 * n_children_tab / n_tab) if n_tab else 0
+                st.subheader("Statistici descriptive")
+                c1, c2, c3, c4, c5 = st.columns(5)
+                with c1:
+                    st.metric("N", f"{n_tab:,}")
+                with c2:
+                    st.metric("Medie" + (f" ({unit_tab})" if unit_tab else ""), f"{values_tab.mean():.2f}")
+                with c3:
+                    st.metric("Mediană" + (f" ({unit_tab})" if unit_tab else ""), f"{values_tab.median():.2f}")
+                with c4:
+                    st.metric("Std.dev.", f"{values_tab.std():.2f}")
+                with c5:
+                    st.metric("IQR", f"{values_tab.quantile(0.75) - values_tab.quantile(0.25):.2f}")
+                st.markdown(f"### Copii (vârstă < 18 ani) în populație: **{n_children_tab:,}** ({pct_children_tab:.1f}%)")
+        return
+
+    # Single chart (non-ALP or ALP with one set)
     fig = go.Figure()
     binned = None
     if use_custom_bins:
@@ -616,7 +673,9 @@ def main():
         display = binned.copy()
         display["Min real"] = display["Min real"].apply(lambda x: str(x) if pd.notna(x) else "—")
         display["Max real"] = display["Max real"].apply(lambda x: str(x) if pd.notna(x) else "—")
-        st.dataframe(display[["Interval", "Frecvență", "Min real", "Max real"]], width="stretch", hide_index=True)
+        n_rows = len(display)
+        table_height = min(36 * n_rows + 52, 1200)
+        st.dataframe(display[["Interval", "Frecvență", "Min real", "Max real"]], width="stretch", hide_index=True, height=table_height)
 
     # Summary stats
     unit = filtered[COL_UM].dropna().iloc[0] if COL_UM in filtered.columns and filtered[COL_UM].notna().any() else ""
@@ -640,29 +699,7 @@ def main():
     with c5:
         st.metric("IQR", f"{values.quantile(0.75) - values.quantile(0.25):.2f}")
 
-    st.caption(f"**Copii (vârstă < 18 ani) în populație:** {n_children:,} ({pct_children:.1f}%)")
-
-    # Modal interval: interval with highest frequency ("where most of the population is")
-    if use_custom_bins and binned is not None:
-        idx_max = binned["Frecvență"].idxmax()
-        modal_row = binned.loc[idx_max]
-        modal_interval = modal_row["Interval"]
-        modal_count = int(modal_row["Frecvență"])
-    else:
-        counts, edges = np.histogram(values, bins=n_bins)
-        i_max = np.argmax(counts)
-        modal_count = int(counts[i_max])
-        modal_interval = f"{edges[i_max]:.2f} - {edges[i_max + 1]:.2f}"
-    pct = (100.0 * modal_count / n_total) if n_total else 0
-    st.info(
-        f"**Intervalul în care se încadrează cea mai mare parte a populației (mod):** {modal_interval} "
-        f"— *n* = {modal_count:,} ({pct:.1f}%)"
-    )
-
-    with st.expander("Percentile"):
-        p = [1, 5, 25, 50, 75, 95, 99]
-        perc = values.quantile([x / 100.0 for x in p])
-        st.dataframe(pd.DataFrame({"Percentil": p, "Rezultat": perc.values}), width="stretch")
+    st.markdown(f"### Copii (vârstă < 18 ani) în populație: **{n_children:,}** ({pct_children:.1f}%)")
 
 
 if __name__ == "__main__":
