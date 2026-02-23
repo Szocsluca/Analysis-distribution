@@ -40,13 +40,11 @@ Thumbs.db
 # Streamlit
 .streamlit/secrets.toml
 
-# Data (sensitive – keep out of version control)
-Creatinina/
-Hemoglobina/
-Glucoza/
-TGO & TGP/
-ALP & GGT/
-MT/
-Intervale de statistica.csv
-Diagnostice.csv
-*.csv.encrypted
+# Date: doar fișierele CRIPTATE (.csv.encrypted) sunt în repo; .csv necriptate rămân locale
+Creatinina/*.csv
+Hemoglobina/*.csv
+Glucoza/*.csv
+TGO & TGP/*.csv
+ALP & GGT/*.csv
+MT/*.csv
+# (Intervale de statistica.csv și Diagnostice.csv sunt în repo – necesare pentru aplicație)
