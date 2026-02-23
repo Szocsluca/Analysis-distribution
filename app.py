@@ -19,21 +19,51 @@ ANALYSIS_FOLDERS = ["Creatinina", "Hemoglobina", "Glucoza", "TGO & TGP", "ALP & 
 
 
 def load_all_csvs_from_folders(base_path: Path | None = None) -> pd.DataFrame:
-    """Load all *.csv files from each analysis folder and concatenate. Returns one raw DataFrame."""
+    """Load all *.csv (and *.csv.encrypted) from each analysis folder. Encrypted takes precedence over plain if both exist."""
     base = base_path or Path(__file__).parent
     all_dfs = []
+    load_errors = []
+    try:
+        from security_utils import get_encryption_key
+        has_key = bool(get_encryption_key())
+    except Exception:
+        has_key = False
     for folder_name in ANALYSIS_FOLDERS:
         folder = base / folder_name
         if not folder.is_dir():
             continue
-        for csv_path in sorted(folder.glob("*.csv")):
-            try:
-                all_dfs.append(load_csv(csv_path))
-            except Exception:
+        plain = {p.name: p for p in sorted(folder.glob("*.csv")) if p.suffix == ".csv"}
+        encrypted = {p.name.removesuffix(".encrypted"): p for p in sorted(folder.glob("*.csv.encrypted"))}
+        for name in sorted(set(plain) | set(encrypted)):
+            path = encrypted.get(name) or plain.get(name)
+            if path is None:
                 continue
+            try:
+                all_dfs.append(load_csv(path))
+            except Exception as e:
+                load_errors.append(f"{path.name}: {e!s}")
+    if not all_dfs and load_errors:
+        raise RuntimeError(
+            "Fișierele există dar nu s-au putut încărca. Posibil cheie de criptare incorectă sau fișiere deteriorate. "
+            f"Prima eroare: {load_errors[0]}"
+        )
     if not all_dfs:
         return pd.DataFrame()
     return pd.concat(all_dfs, ignore_index=True)
+
+
+def get_data_folder_status(base_path: Path | None = None) -> tuple[Path, list[tuple[str, bool, int]]]:
+    """Return (base_path, [(folder_name, exists, n_csv_or_encrypted)])."""
+    base = base_path or Path(__file__).parent
+    status = []
+    for folder_name in ANALYSIS_FOLDERS:
+        folder = base / folder_name
+        exists = folder.is_dir()
+        n = 0
+        if exists:
+            n = len(list(folder.glob("*.csv"))) + len(list(folder.glob("*.csv.encrypted")))
+        status.append((folder_name, exists, n))
+    return base, status
 
 # Column name mapping after strip (header may have trailing spaces)
 COL_NR_CRT = "Nr. crt."
@@ -255,17 +285,35 @@ def bin_values_by_intervals(values: pd.Series, intervals: list) -> pd.DataFrame:
     return pd.DataFrame(rows, columns=["Interval", "Frecvență", "Min real", "Max real"])
 
 
-def load_csv(path_or_buffer) -> pd.DataFrame:
-    """Load CSV: find header row (contains 'Rezultat' or 'Nr. crt.'), strip column names."""
+def _read_csv_content(path_or_buffer) -> str:
+    """Read CSV file or buffer to string. Supports optional decryption for .encrypted files."""
     import io
     if hasattr(path_or_buffer, "read"):
         content = path_or_buffer.read()
-        if isinstance(content, bytes):
-            content = content.decode("utf-8")
-        lines = content.splitlines()
+        return content.decode("utf-8") if isinstance(content, bytes) else content
+    path = Path(path_or_buffer)
+    if not path.exists():
+        raise FileNotFoundError(path)
+    try:
+        from security_utils import get_encryption_key, read_file_content
+        key = get_encryption_key()
+        return read_file_content(path, key)
+    except ImportError:
+        return path.read_text(encoding="utf-8")
+    except Exception:
+        raise
+    return path.read_text(encoding="utf-8")
+
+
+def load_csv(path_or_buffer) -> pd.DataFrame:
+    """Load CSV: find header row (contains 'Rezultat' or 'Nr. crt.'), strip column names. Supports .encrypted files if key is set."""
+    import io
+    if hasattr(path_or_buffer, "read"):
+        content = path_or_buffer.read()
+        content = content.decode("utf-8") if isinstance(content, bytes) else content
     else:
-        with open(path_or_buffer, "r", encoding="utf-8") as f:
-            lines = [line.rstrip("\n\r") for line in f.readlines()]
+        content = _read_csv_content(path_or_buffer)
+    lines = content.splitlines()
     header_idx = 0
     for i, line in enumerate(lines):
         if "Rezultat" in line or "Nr. crt." in line:
@@ -387,6 +435,26 @@ def main():
     st.set_page_config(page_title="Distribuție rezultate analize", layout="wide")
     st.title("Distribuția rezultatelor analizelor medicale")
 
+    # --- Optional app password (st.secrets app_password or env APP_PASSWORD) ---
+    try:
+        from security_utils import get_app_password
+        app_password = get_app_password()
+    except Exception:
+        app_password = None
+    if app_password:
+        if st.session_state.get("_auth_ok"):
+            pass
+        else:
+            p = st.text_input("Parolă aplicație", type="password", key="app_pwd")
+            if p and p.strip() == app_password:
+                st.session_state["_auth_ok"] = True
+                st.rerun()
+            elif p:
+                st.error("Parolă incorectă.")
+                st.stop()
+            else:
+                st.stop()
+
     # --- Data source: default files or upload ---
     use_upload = st.sidebar.checkbox("Încarcă alt fișier(e) CSV", value=False)
     if use_upload:
@@ -397,12 +465,31 @@ def main():
             st.info("Încarcă unul sau mai multe fișiere CSV sau debifează pentru fișierele implicite.")
             return
     else:
-        raw = load_all_csvs_from_folders()
+        try:
+            raw = load_all_csvs_from_folders()
+        except RuntimeError as e:
+            st.error(str(e))
+            with st.expander("Detalii: unde caută aplicația și ce a găsit"):
+                base, status = get_data_folder_status()
+                st.markdown(f"**Unde caută:** `{base.resolve()}`\n\n" + "\n".join(
+                    f"- **{name}**: există, {n} fișier(e)" if ex else f"- **{name}**: nu există"
+                    for name, ex, n in status
+                ))
+            return
         if raw.empty:
+            base, status = get_data_folder_status()
+            lines = [f"**Unde caută aplicația:** `{base.resolve()}`", ""]
+            for name, exists, n in status:
+                if exists:
+                    lines.append(f"- **{name}**: există, {n} fișier(e) .csv sau .csv.encrypted")
+                else:
+                    lines.append(f"- **{name}**: folderul nu există")
             st.error(
-                f"Niciun fișier CSV găsit în folderele: {ANALYSIS_FOLDERS}. "
-                "Asigură-te că folderele există în același director cu app.py și conțin fișiere .csv."
+                "Niciun fișier CSV găsit în folderele de analize. "
+                "Asigură-te că folderele există în același director cu app.py și conțin fișiere .csv sau .csv.encrypted."
             )
+            with st.expander("Detalii: unde caută aplicația și ce a găsit"):
+                st.markdown("\n".join(lines))
             return
 
     df = prepare_data(raw)

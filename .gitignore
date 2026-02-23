@@ -40,8 +40,13 @@ Thumbs.db
 # Streamlit
 .streamlit/secrets.toml
 
-# Optional: uncomment to exclude data (keep code only)
-# Creatinina/
-# Hemoglobina/
-# Glucoza/
-# Diagnostice.csv
+# Data (sensitive – keep out of version control)
+Creatinina/
+Hemoglobina/
+Glucoza/
+TGO & TGP/
+ALP & GGT/
+MT/
+Intervale de statistica.csv
+Diagnostice.csv
+*.csv.encrypted
