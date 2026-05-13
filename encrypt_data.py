@@ -1,8 +1,8 @@
 """
 Encrypt CSV files in the analysis folders for storage at rest.
 Run once to produce .csv.encrypted files; keep the key in st.secrets or env (CSV_ENCRYPTION_KEY).
-Usage: python encrypt_data.py [--password "your-pass"] [--folders "Creatinina,Hemoglobina,..."]
-Without --password, reads from env CSV_ENCRYPTION_PASSWORD (used to derive key) or prompts.
+Usage: python encrypt_data.py [--password "your-pass"] [--key "base64-fernet-key"] [--folders "Creatinina,Hemoglobina,..."]
+Without --password/--key, reuses CSV_ENCRYPTION_KEY when available, else reads CSV_ENCRYPTION_PASSWORD or prompts.
 """
 from __future__ import annotations
 
@@ -13,7 +13,17 @@ import sys
 from pathlib import Path
 
 # Folders to encrypt (default: same as app)
-DEFAULT_FOLDERS = ["Creatinina", "Hemoglobina", "Glucoza", "TGO & TGP", "ALP & GGT", "MT"]
+DEFAULT_FOLDERS = [
+    "Creatinina",
+    "Hemoglobina",
+    "Glucoza",
+    "TGO & TGP",
+    "ALP & GGT",
+    "MT",
+    "Calciu",
+    "Magneziu",
+    "TSH",
+]
 
 
 def derive_key(password: str) -> bytes:
@@ -34,12 +44,17 @@ def encrypt_file(path: Path, key: bytes, out_path: Path | None = None) -> None:
     print(f"  {path.name} -> {target.name}")
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Encrypt CSV files in data folders.")
-    parser.add_argument("--password", "-p", help="Password to derive encryption key (or set CSV_ENCRYPTION_PASSWORD)")
-    parser.add_argument("--folders", "-f", default=",".join(DEFAULT_FOLDERS), help="Comma-separated folder names")
-    parser.add_argument("--dry-run", action="store_true", help="List files that would be encrypted")
-    args = parser.parse_args()
+def resolve_key(args: argparse.Namespace) -> tuple[bytes, bool]:
+    """Return encryption key and whether it was freshly derived from a password."""
+    from security_utils import _normalize_fernet_key, get_encryption_key
+
+    if args.key:
+        return _normalize_fernet_key(args.key), False
+
+    existing_key = get_encryption_key()
+    if existing_key:
+        return existing_key, False
+
     password = args.password or __import__("os").environ.get("CSV_ENCRYPTION_PASSWORD", "").strip()
     if not password:
         import getpass
@@ -47,8 +62,18 @@ def main() -> None:
     if not password:
         print("Eroare: parola nu poate fi goală.", file=sys.stderr)
         sys.exit(1)
+    return derive_key(password), True
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Encrypt CSV files in data folders.")
+    parser.add_argument("--password", "-p", help="Password to derive encryption key (or set CSV_ENCRYPTION_PASSWORD)")
+    parser.add_argument("--key", help="Existing Fernet key (or rely on CSV_ENCRYPTION_KEY / .streamlit/secrets.toml)")
+    parser.add_argument("--folders", "-f", default=",".join(DEFAULT_FOLDERS), help="Comma-separated folder names")
+    parser.add_argument("--dry-run", action="store_true", help="List files that would be encrypted")
+    args = parser.parse_args()
     try:
-        key = derive_key(password)
+        key, derived_now = resolve_key(args)
     except ImportError:
         print("Instalează: pip install cryptography", file=sys.stderr)
         sys.exit(1)
@@ -67,7 +92,7 @@ def main() -> None:
                 print(f"  (dry-run) {path.name} -> {path.name}.encrypted")
             else:
                 encrypt_file(path, key)
-    if not args.dry_run:
+    if not args.dry_run and derived_now:
         print("Cheia (base64) pentru st.secrets sau CSV_ENCRYPTION_KEY:")
         print(key.decode())
 

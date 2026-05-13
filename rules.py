@@ -5,6 +5,7 @@ Add new rules here as we add more analyses.
 """
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -27,6 +28,14 @@ RATA_FILTRARII = "Rata filtrarii glomerolare"
 DIAGNOSTIC = "Diagnostic"
 
 
+def _normalize_diagnostic_value(value: str) -> str:
+    """Normalize diagnostic labels so matching is stable with or without numeric prefixes."""
+    text = str(value).strip()
+    if not text or text.lower() == "nan":
+        return ""
+    return re.sub(r"^\d+\s*-\s*", "", text).strip()
+
+
 def _load_diagnostice_exclusion_map() -> dict[str, set[str]]:
     """
     Load Diagnostice.csv: first column = Diagnostic, other columns = analysis names.
@@ -37,7 +46,7 @@ def _load_diagnostice_exclusion_map() -> dict[str, set[str]]:
     df = pd.read_csv(DIAGNOSTICE_CSV_PATH, encoding="utf-8")
     if df.empty or "Diagnostic" not in df.columns:
         return {}
-    df["Diagnostic"] = df["Diagnostic"].astype(str).str.strip()
+    df["Diagnostic"] = df["Diagnostic"].map(_normalize_diagnostic_value)
     out = {}
     for col in df.columns:
         if col == "Diagnostic":
@@ -143,8 +152,8 @@ def row_filter_exclude_diagnostics_from_csv(df: pd.DataFrame, selected_test: str
     exclude = _diagnostics_to_exclude_for_test(selected_test)
     if not exclude:
         return pd.Series(True, index=df.index)
-    diag_stripped = df[DIAGNOSTIC].astype(str).str.strip()
-    return ~diag_stripped.isin(exclude)
+    diag_normalized = df[DIAGNOSTIC].map(_normalize_diagnostic_value)
+    return ~diag_normalized.isin(exclude)
 
 
 def row_filter_mt_exclude_tumor_diagnostics(df: pd.DataFrame, selected_test: str) -> pd.Series:

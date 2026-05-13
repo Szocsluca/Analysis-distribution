@@ -47,4 +47,7 @@ Glucoza/*.csv
 TGO & TGP/*.csv
 ALP & GGT/*.csv
 MT/*.csv
+Calciu/*.csv
+Magneziu/*.csv
+TSH/*.csv
 # (Intervale de statistica.csv și Diagnostice.csv sunt în repo – necesare pentru aplicație)

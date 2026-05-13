@@ -15,7 +15,7 @@ from rules import apply_exclusion_rules, apply_row_filters, get_active_rule_name
 
 # Folders containing CSV files for all years. All CSVs in these folders are loaded and concatenated.
 # Each folder can contain one or more analysis types (Test column: e.g. TGO, TGP in "TGO & TGP").
-ANALYSIS_FOLDERS = ["Creatinina", "Hemoglobina", "Glucoza", "TGO & TGP", "ALP & GGT", "MT"]
+ANALYSIS_FOLDERS = ["Creatinina", "Hemoglobina", "Glucoza", "TGO & TGP", "ALP & GGT", "MT", "Calciu", "Magneziu", "TSH"]
 
 
 def load_all_csvs_from_folders(base_path: Path | None = None) -> pd.DataFrame:
@@ -105,6 +105,24 @@ ANALYSIS_INTERVALS = {
         (80, 85), (85, 90), (90, 95), (95, 100), (100, 105), (105, 110), (110, 115), (115, 120),
         (120, 125),
         (125, None),
+    ],
+    "Calciu seric total": [
+        (None, 5.0),
+        (5.0, 5.5), (5.5, 6.0), (6.0, 6.5), (6.5, 7.0), (7.0, 7.5), (7.5, 8.0),
+        (8.0, 8.5), (8.5, 9.0), (9.0, 9.5), (9.5, 10.0), (10.0, 10.5),
+        (10.5, None),
+    ],
+    "Magneziu seric (Mg)": [
+        (None, 1.0),
+        (1.0, 1.2), (1.2, 1.4), (1.4, 1.6), (1.6, 1.8), (1.8, 2.0), (2.0, 2.2),
+        (2.2, 2.4), (2.4, 2.6), (2.6, 2.8),
+        (2.8, None),
+    ],
+    "TSH (hormon de stimulare tiroidiana)": [
+        (None, 0.05),
+        (0.05, 0.1), (0.1, 0.5), (0.5, 1.0), (1.0, 1.5), (1.5, 2.0), (2.0, 2.5),
+        (2.5, 3.0), (3.0, 3.5), (3.5, 4.0), (4.0, 4.5), (4.5, 10.0),
+        (10.0, None),
     ],
 }
 
