@@ -15,7 +15,22 @@ from rules import apply_exclusion_rules, apply_row_filters, get_active_rule_name
 
 # Folders containing CSV files for all years. All CSVs in these folders are loaded and concatenated.
 # Each folder can contain one or more analysis types (Test column: e.g. TGO, TGP in "TGO & TGP").
-ANALYSIS_FOLDERS = ["Creatinina", "Hemoglobina", "Glucoza", "TGO & TGP", "ALP & GGT", "MT", "Calciu", "Magneziu", "TSH"]
+ANALYSIS_FOLDERS = [
+    "Creatinina",
+    "Hemoglobina",
+    "Glucoza",
+    "TGO & TGP",
+    "ALP & GGT",
+    "MT",
+    "Calciu",
+    "Magneziu",
+    "TSH",
+    "Sodiu",
+    "Potasiu",
+    "Fosfor",
+    "Amilaza",
+    "Fier",
+]
 SEPARATE_CREATININA_FILE = "CREATININA 2026.csv"
 SEPARATE_CREATININA_TEST = "Creatinina serica"
 COL_SOURCE_FILE = "__source_file"
@@ -150,7 +165,17 @@ ANALYSIS_INTERVALS = {
 # Map data test names to CSV "Denumire" (exact or prefix match in get_csv_interval_sets_for_test)
 INTERVALS_CSV_TEST_ALIASES = {"ALP": "Fosfataza alcalina", "GGT (gama glutamiltransferaza)": "GGT"}
 
-INTERVALS_CSV_PATH = Path(__file__).parent / "Intervale de statistica.csv"
+INTERVALS_CSV_PATHS = [
+    Path(__file__).parent / "Intervale de statistica_14.05.2026.csv",
+    Path(__file__).parent / "Intervale de statistica.csv",
+]
+
+
+def _resolve_intervals_csv_path() -> Path:
+    for path in INTERVALS_CSV_PATHS:
+        if path.exists():
+            return path
+    return INTERVALS_CSV_PATHS[0]
 
 
 def _parse_interval_label(label: str) -> tuple | None:
@@ -182,7 +207,7 @@ def load_intervals_from_csv(path: Path | None = None) -> list[dict]:
     Load Intervale de statistica.csv. Returns list of:
     { "test": str, "condition_label": str, "age": "copii"|"adulti"|None, "equipment": "VITROS"|"ALTE ECHIPAMENTE"|None, "intervals": list of (low, high) tuples }
     """
-    p = path or INTERVALS_CSV_PATH
+    p = path or _resolve_intervals_csv_path()
     if not p.exists():
         return []
     try:

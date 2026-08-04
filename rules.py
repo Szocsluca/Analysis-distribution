@@ -19,6 +19,11 @@ HEMOGLOBINA_GLICATA_TEST = "Hemoglobina glicata (Hb A1c)"
 CREATININA_TEST = "Creatinina serica"
 # Markeri tumorali (MT folder): CA 125, CA 15.3, CA 19.9
 MT_TESTS = {"CA 125", "CA 15.3", "CA 19.9"}
+SODIU_TEST = "Sodiu in ser (Na)"
+POTASIU_TEST = "Potasiu in ser (K)"
+FOSFOR_TEST = "Fosfor in ser (P)"
+AMILAZA_TEST = "Amilaza serica"
+FIER_TEST = "Fier seric (sideremie)"
 
 # Column names (must match prepared dataframe)
 CNP = "CNP"
@@ -71,6 +76,29 @@ def _diagnostics_to_exclude_for_test(selected_test: str) -> set[str]:
             if best is None or len(col_name) > len(best):
                 best = col_name
     return mapping.get(best, set()) if best else set()
+
+
+def _diagnostics_to_exclude_for_columns(column_names: list[str]) -> set[str]:
+    """Return diagnostics marked DA for one or more explicit analysis columns from Diagnostice.csv."""
+    mapping = _load_diagnostice_exclusion_map()
+    if not mapping:
+        return set()
+    out: set[str] = set()
+    for name in column_names:
+        target = name.strip().lower()
+        if not target:
+            continue
+        # Prefer exact column name match.
+        exact = next((k for k in mapping.keys() if k.strip().lower() == target), None)
+        if exact is not None:
+            out |= mapping.get(exact, set())
+            continue
+        # Fallback: loose contains matching for slight naming differences.
+        for col_name, values in mapping.items():
+            c = col_name.strip().lower()
+            if target in c or c in target:
+                out |= values
+    return out
 
 
 def rule_glicemie_exclude_cnp_if_hba1c_gt_6(df: pd.DataFrame, selected_test: str) -> set:
@@ -147,6 +175,9 @@ def row_filter_exclude_diagnostics_from_csv(df: pd.DataFrame, selected_test: str
     For analysis selected_test, exclude rows whose Diagnostic is marked DA in Diagnostice.csv
     (column = analysis, row = diagnostic, cell = DA).
     """
+    # Custom diagnostic rules handle these tests explicitly.
+    if selected_test in {SODIU_TEST, POTASIU_TEST, FOSFOR_TEST, AMILAZA_TEST, FIER_TEST}:
+        return pd.Series(True, index=df.index)
     if DIAGNOSTIC not in df.columns:
         return pd.Series(True, index=df.index)
     exclude = _diagnostics_to_exclude_for_test(selected_test)
@@ -170,12 +201,60 @@ def row_filter_mt_exclude_tumor_diagnostics(df: pd.DataFrame, selected_test: str
     return ~has_tumor
 
 
+def row_filter_fosfor_correlate_with_calciu_magneziu(df: pd.DataFrame, selected_test: str) -> pd.Series:
+    """
+    For Fosfor: exclude diagnostics marked DA for Calciu and Magneziu columns.
+    PTH is intentionally skipped until PTH statistics are available.
+    """
+    if selected_test != FOSFOR_TEST:
+        return pd.Series(True, index=df.index)
+    if DIAGNOSTIC not in df.columns:
+        return pd.Series(True, index=df.index)
+    exclude = _diagnostics_to_exclude_for_columns(["Calciu", "Magneziu", "PTH"])
+    if not exclude:
+        return pd.Series(True, index=df.index)
+    diag_normalized = df[DIAGNOSTIC].map(_normalize_diagnostic_value)
+    return ~diag_normalized.isin(exclude)
+
+
+def row_filter_amilaza_correlate_with_tgo_tgp_and_keywords(df: pd.DataFrame, selected_test: str) -> pd.Series:
+    """
+    For Amilaza: exclude diagnostics marked DA for TGO/TGP and diagnostics containing
+    pancreas/pancreatita keywords.
+    """
+    if selected_test != AMILAZA_TEST:
+        return pd.Series(True, index=df.index)
+    if DIAGNOSTIC not in df.columns:
+        return pd.Series(True, index=df.index)
+    exclude = _diagnostics_to_exclude_for_columns(["TGO", "TGP"])
+    diag_normalized = df[DIAGNOSTIC].map(_normalize_diagnostic_value)
+    diag_text = df[DIAGNOSTIC].astype(str).str.strip().str.lower()
+    has_pancreas_terms = diag_text.str.contains("pancreas|pancreatita", case=False, na=False, regex=True)
+    if exclude:
+        return (~diag_normalized.isin(exclude)) & (~has_pancreas_terms)
+    return ~has_pancreas_terms
+
+
+def row_filter_fier_exclude_anemia_keywords(df: pd.DataFrame, selected_test: str) -> pd.Series:
+    """For Fier: exclude diagnostics containing anemie/anemic/feripriva keywords."""
+    if selected_test != FIER_TEST:
+        return pd.Series(True, index=df.index)
+    if DIAGNOSTIC not in df.columns:
+        return pd.Series(True, index=df.index)
+    diag_text = df[DIAGNOSTIC].astype(str).str.strip().str.lower()
+    has_iron_deficiency_terms = diag_text.str.contains("anemie|anemia|anemic|feripriv", case=False, na=False, regex=True)
+    return ~has_iron_deficiency_terms
+
+
 # List of row filters: (test name or None for all, description, function).
 # Only filters whose test matches selected_test (or test is None) are applied.
 ROW_FILTERS = [
     (CREATININA_TEST, "Rata filtrarii glomerolare >= 90 (exclude < 90)", row_filter_rata_min_90),
     (HEMOGLOBINA_GLICATA_TEST, "Hemoglobina glicată: exclude rezultate <= 4.4", row_filter_hba1c_exclude_leq_44),
     (None, "Diagnostic exclus conform Diagnostice.csv (DA)", row_filter_exclude_diagnostics_from_csv),
+    (FOSFOR_TEST, "Fosfor: corelat cu Calciu/Magneziu (PTH indisponibil)", row_filter_fosfor_correlate_with_calciu_magneziu),
+    (AMILAZA_TEST, "Amilaza: corelat cu TGO/TGP + pancreas/pancreatita", row_filter_amilaza_correlate_with_tgo_tgp_and_keywords),
+    (FIER_TEST, "Fier: exclude diagnostic anemie/anemic/feripriva", row_filter_fier_exclude_anemia_keywords),
     # MT: exclude rows with diagnostic containing tumora/tumori (one entry per MT test)
     ("CA 125", "MT: exclude diagnostic tumora/tumori", row_filter_mt_exclude_tumor_diagnostics),
     ("CA 15.3", "MT: exclude diagnostic tumora/tumori", row_filter_mt_exclude_tumor_diagnostics),
