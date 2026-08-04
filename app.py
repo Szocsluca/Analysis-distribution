@@ -16,6 +16,9 @@ from rules import apply_exclusion_rules, apply_row_filters, get_active_rule_name
 # Folders containing CSV files for all years. All CSVs in these folders are loaded and concatenated.
 # Each folder can contain one or more analysis types (Test column: e.g. TGO, TGP in "TGO & TGP").
 ANALYSIS_FOLDERS = ["Creatinina", "Hemoglobina", "Glucoza", "TGO & TGP", "ALP & GGT", "MT", "Calciu", "Magneziu", "TSH"]
+SEPARATE_CREATININA_FILE = "CREATININA 2026.csv"
+SEPARATE_CREATININA_TEST = "Creatinina serica"
+COL_SOURCE_FILE = "__source_file"
 
 
 def load_all_csvs_from_folders(base_path: Path | None = None) -> pd.DataFrame:
@@ -39,7 +42,7 @@ def load_all_csvs_from_folders(base_path: Path | None = None) -> pd.DataFrame:
             if path is None:
                 continue
             try:
-                all_dfs.append(load_csv(path))
+                all_dfs.append(load_csv(path, source_name=path.name))
             except Exception as e:
                 load_errors.append(f"{path.name}: {e!s}")
     if not all_dfs and load_errors:
@@ -295,6 +298,19 @@ def get_intervals_for_test(test_name: str, interval_set_index: int | None = None
     return ANALYSIS_INTERVALS.get(test_name)
 
 
+def get_creatinina_2026_intervals() -> list[tuple[float | None, float | None] | tuple[float | None, float | None, bool]]:
+    """Create intervals for separate Creatinina 2026 analysis: [0.4, 4.0] with step 0.1, plus >4."""
+    intervals: list[tuple[float | None, float | None] | tuple[float | None, float | None, bool]] = [(None, 0.4)]
+    low = 0.4
+    while low < 3.9:
+        high = round(low + 0.1, 1)
+        intervals.append((round(low, 1), high))
+        low = high
+    intervals.append((3.9, 4.0, True))  # include 4.0 in the last bounded interval
+    intervals.append((4.0, None, False))
+    return intervals
+
+
 def bin_values_by_intervals(values: pd.Series, intervals: list) -> pd.DataFrame:
     """Assign each value to an interval. Intervals: (low, high) or (low, high, left_open_inclusive). None = unbounded."""
     rows = []
@@ -309,8 +325,9 @@ def bin_values_by_intervals(values: pd.Series, intervals: list) -> pd.DataFrame:
             label = f">={low}" if right_inclusive else f">{low}"
             mask = values >= low if right_inclusive else values > low
         elif low is not None and high is not None:
+            right_inclusive = item[2] if len(item) > 2 else False
             label = f"{low} - {high}"
-            mask = (values >= low) & (values < high)
+            mask = (values >= low) & (values <= high) if right_inclusive else (values >= low) & (values < high)
         else:
             continue
         subset = values[mask]
@@ -341,7 +358,7 @@ def _read_csv_content(path_or_buffer) -> str:
     return path.read_text(encoding="utf-8")
 
 
-def load_csv(path_or_buffer) -> pd.DataFrame:
+def load_csv(path_or_buffer, source_name: str | None = None) -> pd.DataFrame:
     """Load CSV: find header row (contains 'Rezultat' or 'Nr. crt.'), strip column names. Supports .encrypted files if key is set."""
     import io
     if hasattr(path_or_buffer, "read"):
@@ -358,6 +375,8 @@ def load_csv(path_or_buffer) -> pd.DataFrame:
     content_from_header = "\n".join(lines[header_idx:])
     df = pd.read_csv(io.StringIO(content_from_header), encoding="utf-8", dtype=str)
     df.columns = [c.strip() for c in df.columns]
+    if source_name:
+        df[COL_SOURCE_FILE] = source_name
     return df
 
 
@@ -496,7 +515,7 @@ def main():
     if use_upload:
         uploaded = st.sidebar.file_uploader("Fișier(e) CSV", type=["csv"], accept_multiple_files=True)
         if uploaded:
-            raw = pd.concat([load_csv(f) for f in uploaded], ignore_index=True)
+            raw = pd.concat([load_csv(f, source_name=getattr(f, "name", None)) for f in uploaded], ignore_index=True)
         else:
             st.info("Încarcă unul sau mai multe fișiere CSV sau debifează pentru fișierele implicite.")
             return
@@ -541,6 +560,14 @@ def main():
         return
     selected_test = st.sidebar.selectbox("Analiză (Test)", options=tests, index=0)
 
+    use_separate_creatinina_2026 = False
+    if selected_test == SEPARATE_CREATININA_TEST:
+        use_separate_creatinina_2026 = st.sidebar.checkbox(
+            "Analiză separată: CREATININA 2026.csv",
+            value=False,
+            help="Ignoră filtrul de rată glomerulară și excluderile după diagnostic. Aplică intervale fixe 0.4-4.0 (pas 0.1) și >4.",
+        )
+
     cnp_search = st.sidebar.text_input("CNP (un singur pacient)", placeholder="ex: 2670704284393", help="Lasă gol pentru statistici pe toată populația.")
 
     sex_options = ["Toate", "F", "M"]
@@ -573,23 +600,31 @@ def main():
         cnp_search.strip() or None,
     )
 
-    # Apply exclusion rules (e.g. Glicemie: exclude CNP if Hb A1c > 6)
-    exclude_cnps = apply_exclusion_rules(df, selected_test)
-    if exclude_cnps:
-        cnp_stripped = filtered[COL_CNP].astype(str).str.strip()
-        before = len(filtered)
-        filtered = filtered[~cnp_stripped.isin(exclude_cnps)]
-        n_excluded = before - len(filtered)
-        active_rules = get_active_rule_names(selected_test)
-        if active_rules and n_excluded > 0:
-            st.sidebar.caption(f"Reguli aplicate: {len(active_rules)}. Excluse: {n_excluded} rezultate.")
+    if use_separate_creatinina_2026:
+        if COL_SOURCE_FILE not in filtered.columns:
+            st.error("Nu s-a putut identifica fișierul sursă pentru analiza separată.")
+            return
+        source_match = filtered[COL_SOURCE_FILE].astype(str).str.strip().str.casefold() == SEPARATE_CREATININA_FILE.casefold()
+        filtered = filtered[source_match]
+        st.sidebar.caption(f"Mod separat activ: doar {SEPARATE_CREATININA_FILE}")
 
-    # Apply row filters (e.g. Rata filtrarii glomerolare >= 90)
-    before_row = len(filtered)
-    filtered, applied_row_filters = apply_row_filters(filtered, selected_test)
-    if applied_row_filters:
-        lines = [f"**{name}:** {n:,} rânduri excluse" for name, n in applied_row_filters]
-        st.sidebar.caption("Filtre pe rând:\n\n" + "\n\n".join(lines))
+    if not use_separate_creatinina_2026:
+        # Apply exclusion rules (e.g. Glicemie: exclude CNP if Hb A1c > 6)
+        exclude_cnps = apply_exclusion_rules(df, selected_test)
+        if exclude_cnps:
+            cnp_stripped = filtered[COL_CNP].astype(str).str.strip()
+            before = len(filtered)
+            filtered = filtered[~cnp_stripped.isin(exclude_cnps)]
+            n_excluded = before - len(filtered)
+            active_rules = get_active_rule_names(selected_test)
+            if active_rules and n_excluded > 0:
+                st.sidebar.caption(f"Reguli aplicate: {len(active_rules)}. Excluse: {n_excluded} rezultate.")
+
+        # Apply row filters (e.g. Rata filtrarii glomerolare >= 90)
+        filtered, applied_row_filters = apply_row_filters(filtered, selected_test)
+        if applied_row_filters:
+            lines = [f"**{name}:** {n:,} rânduri excluse" for name, n in applied_row_filters]
+            st.sidebar.caption("Filtre pe rând:\n\n" + "\n\n".join(lines))
 
     if unique_cnp and COL_CNP in filtered.columns:
         before_dedup = len(filtered)
@@ -616,7 +651,10 @@ def main():
     is_alp_tabs = selected_test in ("Fosfataza alcalina", "ALP") and len(csv_interval_sets) > 1
     interval_set_index = 0 if csv_interval_sets and not is_alp_tabs else None
 
-    intervals = get_intervals_for_test(selected_test, interval_set_index=interval_set_index, csv_interval_sets=csv_interval_sets)
+    if use_separate_creatinina_2026:
+        intervals = get_creatinina_2026_intervals()
+    else:
+        intervals = get_intervals_for_test(selected_test, interval_set_index=interval_set_index, csv_interval_sets=csv_interval_sets)
     use_custom_bins = intervals is not None
     if use_custom_bins:
         show_kde = False
