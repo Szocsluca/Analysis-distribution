@@ -42,7 +42,7 @@ def load_all_csvs_from_folders(base_path: Path | None = None) -> pd.DataFrame:
             if path is None:
                 continue
             try:
-                all_dfs.append(load_csv(path, source_name=path.name))
+                all_dfs.append(load_csv(path, source_name=name))
             except Exception as e:
                 load_errors.append(f"{path.name}: {e!s}")
     if not all_dfs and load_errors:
